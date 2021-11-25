@@ -1,0 +1,611 @@
+/* CSS CUA MENU/HEADER */
+body{
+    margin: 0;
+    background-color: white;
+    font-family: sans-serif;
+}
+header{
+    background-color: #f7f7f7;
+    height: 100%;
+    z-index: 10;
+    position: relative;
+}
+.menu1{
+    height: 10px;
+    background-color: rgba(0,99,65,1);
+}
+.menu2{
+    margin-top: 12px;
+    padding: 0 20px;
+    
+}
+.menu37{
+    display: flex;
+    justify-content:center ;
+    padding-bottom: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 10px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.menu34{
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+    display: flex;
+}
+.menu35{
+    padding: 0 8px;
+    color: rgba(0,99,65,1) ;
+}
+.menu34:hover{
+    color: rgba(70, 70, 70, 0.699);
+}
+.menu34:hover .menu35{
+    color: rgba(0, 99, 64, 0.795) ;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+/*menu*/
+.menu3{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.menu7{
+    margin-top: 46px;
+}
+.menu5{
+    color: black;
+    margin-left: -40px;
+    padding: 16px 14px ;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+}
+.menu31{
+    color: black;
+    margin-left: -42px;
+    padding: 16px 14px ;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.menu5:hover{
+    background-color: black;
+    color: white;
+}
+.menu31:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*dropdown*/
+.menu10{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content:flex-start;
+}
+.menu16{
+    margin-top: -65px;
+    display: flex;
+    width: 100%;
+    justify-content:flex-start;
+}
+.menu6{
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    top: 105px;
+    background-color: rgb(0, 0, 0);
+    
+} 
+ul.menu9{
+    padding: 0px 300px;
+    overflow: hidden;
+    height: 0;
+    max-height: 0;
+}
+ul.menu4 li:hover ul.menu9{
+    height:auto;
+    max-height: 1000px;
+    transition-property: max-height;
+    transition-timing-function: ease-in-out;
+    transition-duration: 600ms;
+    transition-delay: 200ms;
+}
+
+.menu8{
+    background-color: rgb(21, 21, 21);
+}
+.menu9{
+    background-color: rgb(29, 29, 29);
+}
+.menu11{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 30px;
+    white-space: nowrap;
+}
+.menu12{
+    margin-left: -10px;
+}
+.menu12 a{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+.menu11 a{
+    color: white;
+}
+.menu19{
+    padding: 05px 10px;
+    color: white;
+}
+.menu20{
+    margin-left: -70px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    display: flex;
+}
+.menu18{
+    width: 78%;
+    border: none;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 62px;
+    margin-left: 10px;
+}
+.menu22{
+    width: 78%;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.301);
+    margin-top: -20px;
+    margin-left: 10px;
+}
+.menu24{
+    width: 78%;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.301);
+    margin-top: -90px;
+    margin-left: 10px;
+}
+.menu26{
+    width: 78%;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.301);
+    margin-top: -80px;
+    margin-left: 10px;
+}
+.menu28{
+    width: 78%;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.301);
+    margin-top: -100px;
+    margin-left: 10px;
+}
+.menu30{
+    width: 78%;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.301);
+    margin-top: -90px;
+    margin-left: 10px;
+}
+.menu17{
+    margin-left: -40px;
+    font-weight: 500;
+}
+div.menu10 ul{
+    padding-right: 100px;
+}
+.menu13{
+    width: 130px;
+
+}
+.menu21{
+    margin-left: 543px;
+    width: 145px;
+}
+.menu23{
+    margin-left: 228px;
+    width: 130px;
+}
+.menu25{
+    margin-left: 553px;
+    width: 127px;
+}
+.menu27{
+    margin-left: 435px;
+    width: 133px;
+}
+.menu29{
+    margin-left: -14px;
+    width: 140px;
+}
+.menu14{
+    word-break: break-all;
+    font-size: 15px;
+    margin-top: 4px ;
+    white-space: normal;
+    color: white;
+}
+.menu15{
+    font-size: 14px;
+    white-space: normal;
+    color: white;
+}
+.menu32{
+    margin-left: 10%;
+}
+.menu36{
+    margin: 4px 6px;
+    white-space: nowrap;
+}
+.menu9 ul li a:hover{
+    background: green;
+}
+.menu3bars{
+    display: none;
+}
+
+
+
+
+            /* KET THUC CSS MENU */
+
+
+
+
+
+.choose-main{
+    background-image: url('../hinhanh/Coffee-Finder-Background_tcm90-3968.png');
+    background-position: left top;
+    background-size: auto 1200px;
+    background-color: #F2EFEA;
+    padding-top: 30px;
+    height: 800px;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+}
+.choose-2,.choose-3{
+    margin-top: 300px;
+}
+.choose-3{
+    padding-bottom: 400px;
+}
+.choose-title  h1{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 45px;
+    font-size: 36px;
+    color: #3d3a35;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    
+}
+.choose-title p{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3d3a35;
+    margin-top: -20px;
+}
+.choose-question{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #3d3a35;
+    margin-top: 4%;
+    display: flex;
+    animation: up 1s ease-in-out;
+}
+.choose-note-content{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #37342f;
+    padding: 5px 5px 3px 10px;
+    background: rgb(102, 101, 101);
+    border: white 1px solid;
+    border-radius: 6px;
+    color: white;
+    width: 400px;
+    white-space: normal;
+    position: absolute;
+    margin-left: -200px;
+    font-style: normal;
+    visibility: hidden;
+    z-index: 1;
+}
+.choose-note-content::before{
+    position: absolute;
+    top: -10px;
+    right: 40%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 15px solid rgb(102, 101, 101);
+}
+.choose-note{
+    border-bottom: dotted black 1px;
+    position: relative;
+    height: 30px;
+    margin-top: 27px;
+    margin-left: 5px;
+    z-index: 1;
+}
+.choose-note2{
+    padding: 0 7px;
+}
+.choose-note:hover .choose-note-content{
+   visibility: visible;
+   cursor:pointer;
+}
+.choose-circles{
+    display: flex;
+    animation: up 1s ease-in-out;
+    -webkit-animation: up 1s ease-in-out;
+}
+.choose-2{
+    animation: up 1s ease-in-out;
+    -webkit-animation: up 1s ease-in-out;
+}
+@keyframes up {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+.circle img{
+    height: 202px;
+    opacity: 0.6;
+}
+.circle img:hover{
+    opacity: 0.75;
+}
+.circle{
+    margin: 25px 40px;
+    text-align: center;
+}
+.circle-desc{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3d3a35;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+                 /* CSS CUA FOOTER */
+footer {
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+.footer-top {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top__icon {
+    margin: auto 0px;
+    height: 110px;
+    width: 100px;
+    display: flex;
+    position: relative;
+    right: 680px;
+}
+
+.footer-top__icon-link {
+    margin: auto 20%;
+    
+}
+
+.footer__facebook {
+    font-size: 30px;
+
+}
+
+.footer__instagram {
+    font-size: 30px;
+}
+
+.footer-mid {
+    background-color: #f7f7f7;
+    border-top: 3px solid #fff;
+}
+
+.footer-mid__grid {
+    width: 1400px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.footer-mid__grid--row {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    background-image: url(https://www.starbucks.vn/media/wordmark_footer_tcm90-397.png);
+    background-size: 18.4px;
+    background-repeat: no-repeat;
+    background-position: 98.5% 0;
+    margin-top: 40px;
+}
+
+.footer-mid__grid--col1-3 {
+    padding: 0 5px;
+    width: 200px;
+    white-space: normal;
+}
+
+.footer-mid__list {
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-mid__grid--col1-3 h3 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+footer a:hover {
+    color: #b3b3b3da;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-bottom: 3%;
+}
+
+.footer-bottom__language {
+    display: flex;
+}
+
+.VN {
+    height: 10px;
+}
+
+.footer-bottom__language--left {
+    font-size: 10px;
+    margin: 5px 15px;
+}
+
+.footer-bottom__language--vn {
+    padding: 0 20px;
+    margin: 0;
+    border-left: 1px solid #b3b3b3;
+}
+
+.footer-bottom__language--eng {
+    font-size: 90%;
+    margin: 2px 0;
+}
+
+.footer-bottom__language--right {
+    margin: 5px 10px;
+    font-size: 10px;
+}
+
+.footer-bottom__nav {
+    display: block;
+    margin: 28px 0;
+    display: flex;
+}
+
+.footer-bottom__nav a {
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.footer-bottom__links--daudoan {
+    margin-left: -1%;
+}
+
+.footer-bottom__links2-5 a {
+    padding: 0 10px;
+    border-left: 1px solid #b3b3b3;
+}
+
+.footer__copyright {
+    font-size: 11px;
+}
+
+        /* KET THUC CSS FOOTER */
+
+
+@media screen and (max-width: 740px) {
+    
+    .choose-main{
+        padding-left: 0;
+        height: 600px;
+    }
+    .choose-title{
+        margin: 0 10px;
+    }
+    .choose-title h1{
+        font-size: 20px;
+    }
+    .choose-question{
+        font-size: 16px;
+        margin: -10px 10px;
+        white-space: nowrap;
+    }
+    .choose-question p:last-child{
+        display: none;
+    }
+    .choose-note{
+        margin-top: 17px ;
+    }
+    .choose-2, .choose-3{
+        padding-top: 60px;
+    }
+    .choose-circles{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .circle img{
+        width: 100px;
+        height: auto;
+        padding: 0 10px;
+    }
+    .circle-desc{
+        white-space: nowrap;
+        width: 100px;
+    }
+    .circle{
+        margin: 10px 4px;
+    }
+}

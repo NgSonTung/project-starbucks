@@ -1,0 +1,15 @@
+@media (max-width: 740px) {
+    .menu3{
+        display: none;
+    }
+    .menu36{
+        display: none   ;
+    }
+    .menu37{
+        justify-content: space-between;
+    }
+    .menu35{
+        
+    }
+
+}

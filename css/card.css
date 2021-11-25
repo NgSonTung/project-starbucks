@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card__header-top {
+    background-color: #333333;
+    height: 100px;
+}
+
+.card__header-topleft {
+    float: left;
+    padding: 17px;
+}
+
+.card__header--menu {
+    display: block;
+    position: relative;
+    float: right;
+}
+
+.card__header--menu ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 4%;
+}
+
+.card__header--menu ul li {
+    margin-left: 30px;
+    font-size: 95%;
+}
+
+.card__header--menu ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+#card__FAQs--font {
+    text-transform: none;
+}
+
+#card__signinpage {
+    margin-right: 25px;
+    padding: 10px 20px;
+    background-color: #02a860;
+    border-radius: 50px;
+    font-size: 85%;
+    text-transform: none;
+    font-weight: bolder;
+}
+
+#card__signinpage:hover {
+    border: none;
+    cursor: default;
+}
+
+.card__header--menu ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.card__header-bottom {
+    background-color: #262626;
+    height: 40px;
+}
+
+.card__header-bottom a {
+    display: block;
+    color: #c0a65c;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #c0a65c;
+    float: right;
+    margin: 12px 25px;
+    text-transform: uppercase;
+    font-size: 75%;
+}
+
+.card__benefit-top {
+    display: inline-block;
+    width: 100%;
+    height: 370px;
+    background-image: linear-gradient(180deg, transparent, #000), url(../hinhanh/bg-index.f3bf60f3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__rewarded {
+    display: block;
+    width: 48%;
+    margin: 5% auto;
+}
+
+.card__benefit-bottom {
+    display: inline-block;
+    position: relative;
+    height: 750px;
+    width: 100%;
+    margin-top: -4px;
+    background-position: bottom;
+    background-image: linear-gradient(0deg, transparent 80%, #000), url(../hinhanh/bg-benefits.2211de64.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__benefit--yellowtext {
+    margin-top: 2%;
+    color: #c0a65c;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 125%;
+}
+
+.card__benefit--whitetext {
+    text-align: center;
+    margin-top: -9px;
+    color: white;
+    font-size: 90%;
+    margin-bottom: 2%;
+}
+
+.card__gold--detail {
+    border: 1px solid #c0a65c;
+    border-radius: 15px;
+    width: 428px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.card__gold--title {
+    margin: 4% 0;
+    display: block;
+    font-size: 130%;
+    color: #c0a65c;
+    text-align: center;
+}
+
+.card__gold--subtitle {
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 5%;
+    font-size: 90%;
+}
+
+.card__gold--detail-layout {
+    display: flex;
+}
+
+.card__gold--detail-left {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.card__golddrink {
+    display: block;
+    width: 50%;
+    float: right;
+    margin-right: 25%;
+}
+
+.card__gold--detail-left p {
+    text-align: center;
+    margin-top: 45%;
+    font-size: 13px;
+    color: white;
+}
+
+.card__gold--detail-right {
+    width: 50%;
+    margin-right: 10%;
+}
+
+.card__goldcard {
+    display: block;
+    height: 30%;
+    float: left;
+    margin-left: 25%;
+}
+
+.card__gold--detail-right p {
+    text-align: center;
+    margin-top: 50%;
+    font-size: 13px;
+    color: white;
+    margin-left: -10%;
+}
+
+.card__green--detail {
+    border: 1px solid #02a860;
+    border-radius: 15px;
+    margin-top: 100px;
+    width: 428px;
+    height: 220px;
+    margin: 2% auto;
+}
+
+.card__green--title {
+    display: block;
+    font-size: 130%;
+    color: #02a860;
+    text-align: center;
+}
+
+.card__green--detail-layout {
+    display: flex;
+}
+
+.card__green--detail-left {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.card__greendrink {
+    display: block;
+    height: 30%;
+    float: right;
+    margin-right: 50%;
+}
+
+.card__green--detail-left p {
+    text-align: center;
+    padding-top: 40%;
+    margin-right: 15%;
+    font-size: 13px;
+    color: white;
+}
+
+.card__gold--detail-right {
+    width: 50%;
+    margin-right: 10%;
+}
+
+.card__doublegreendrink {
+    display: block;
+    height: 25%;
+    float: left;
+    margin-left: -20%;
+    margin-top: 15%;
+}
+
+.card__green--detail-right p {
+    padding-top: 30px;
+    text-align: center;
+    margin-top: 50%;
+    font-size: 13px;
+    color: white;
+    margin-left: -20%;
+}
+
+.card__registerpage p {
+    font-size: 110%;
+    color: white;
+    text-align: center;
+    margin-top: -1%;
+}
+
+.card__registerpage a {
+    color: #02a860;
+    text-decoration: none;
+}
+
+.card__registerpage a:hover {
+    border-bottom: 1px solid #02a860;
+}
+
+#card__apps {
+    width: 100%;
+    height: 445px;
+}
+
+.card__apps--detail {
+    margin: 4% 17%
+}
+
+.card__apps--top {
+    display: flex;
+}
+
+.card__apps--left {
+    width: 40%;
+}
+
+.card__apps--left-image {
+    display: inline-block
+}
+
+.card__apps--right {
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+.card__apps--right-image {
+    width: 95px;
+}
+
+.card__apps--right p {
+    color: #585858;
+}
+
+.card__app-download {
+    display: flex;
+}
+
+.card__appstore {
+    width: 137px;
+}
+
+.card__googleplay {
+    width: 150px;
+    margin-left: 2%;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #f0f0f0;
+}
+
+.card__footer--content {
+    color: #706e6e;
+    margin: 0 20px;
+}
+
+.card__footer--content a {
+    color: #706e6e;
+    text-decoration: none;
+}
+
+.card__footer-top {
+    padding-top: 10px;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__footer-top a:hover {
+    text-decoration: underline;
+}
+
+.card__footer-top--col {
+    display: block;
+    width: 25%;
+}
+
+.card__footer-top--colbox {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.card__footer-top--colbox li {
+    margin: 2% 0;
+}
+
+.card__footer-top--title a {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card__footer-bot {
+    margin-top: 10px;
+    padding-bottom: 1%;
+    font-size: 50%;
+    font-size: 90%;
+}
+
+.footer-bottom {
+    margin-left: 20px;
+    padding-bottom: 3%;
+    font-size: 50%;
+}
+
+.footer-bottom__language {
+    display: flex;
+    height: 22px;
+}
+
+.VN {
+    height: 12px;
+    display: block;
+    margin-top: 25%;
+}
+
+.footer-bottom__language--left {
+    color: #333333;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 3px 15px 3px 5px;
+    padding-right: 15px;
+    border-right: 1px solid #b3b3b3;
+}
+
+.footer-bottom__language--vn {
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.footer-bottom__language--eng {
+    color: #333333;
+    font-size: 13px;
+    margin: 2px 0;
+    line-height: 20px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #b3b3b3;
+}
+
+.footer-bottom__language--right {
+    margin: 5px 10px;
+    font-size: 10px;
+}
+
+.footer-bottom__nav {
+    display: block;
+    margin: 13px 0;
+    display: flex;
+}
+
+.footer-bottom__nav a {
+    padding: 0 10px;
+    font-size: 15px;
+    font-size: 85%;
+}
+
+.footer-bottom__links--daudoan {
+    margin-left: -10px;
+}
+
+.footer-bottom__links2-5 a {
+    padding: 0 10px;
+    border-left: 1px solid #b3b3b3;
+}
+
+.footer__copyright {
+    font-size: 11px;
+}

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/caphecct.css">
+    <script src="https://kit.fontawesome.com/3c4540d338.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="coffee-banner">
+            <div class="banner-title-container">
+                <h1 class="banner-title">Cà phê của Chúng tôi</h1>
+            </div>
+        </div>
+        <div class="form">
+            <div class=" form-hide">
+                <h1 id="button1" class="form-hide-button btn1">Ẩn bộ lọc ▲</h1>
+                <h1 id="button2" class="form-hide-button btn2">Hiển thị bộ lọc ▼</h1>
+            </div>
+            <div class="form-container">
+                <form action="">
+                    <div id="check-cont"  class="check-container">
+                        <div class="check hinhdang">
+                            <h3 class="check-title"> HÌNH DẠNG</h3>
+                            <div class="check-box">
+                                <input type="checkbox"  id="CPNH" onclick="check()">
+                                <label for="CPNH">Cà phê nguyên Hạt</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="QUA"  onclick="check()">
+                                <label for="QUA">QUA</label>
+                            </div>
+                        </div>
+                        <div class="check rang">
+                            <h3 class="check-title"> RANG</h3>
+                            <div class="check-box">
+                                <input type="checkbox"  id="VANG" onclick="check()">
+                                <label for="vang">Vàng</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="VUA"  onclick="check()">
+                                <label for="VUA">Vừa</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="SAMMAU"  onclick="check()">
+                                <label for="SAMMAU">Sẫm màu</label>
+                            </div>
+                        </div>
+                        <div class="check cafein">
+                            <h3 class="check-title"> CAFEIN</h3>
+                            <div class="check-box">
+                                <input type="checkbox" id="THUONG" onclick="check()">
+                                <label for="THUONG">Thường</label>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="DKC" onclick="check()">
+                                <label for="DKC">Đã khử cafein</label>
+                            </div>
+                        </div>
+                        <div class="check cohuongvi">
+                            <h3 class="check-title"> CÓ HƯƠNG VỊ</h3>
+                            <div class="check-box">
+                                <input type="checkbox" id="KCHV" onclick="check()">
+                                <label for="KCHV">Không có hương vị</label>
+                            </div>
+                        </div>
+                        <div class="check noimuahang">
+                            <h3 class="check-title"> NƠI MUA HÀNG</h3>
+                            <div class="check-box">
+                                <input type="checkbox"  name="chs">
+                                <label for="chs">Cửa hàng Starbucks</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="cards-title">
+                <h1> Đây là 24 loại cà phê phù hợp với lựa chọn của bạn</h1>
+            </div>
+                <div id="cards-container" class="cards-container">
+                    <div id="card1" class="card cards-1">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/4ac79f39ec704316b5d68cf9f75db3cb.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>BLONDE ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Starbucks Veranda Blend™</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Ngọt dịu và nhẹ nhàng</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card2" class="card cards-2">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/fb362ebc0ccd46cca15602ce040cde22.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>BLONDE ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Starbucks Willow Blend™</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Tươi & Tinh khiết</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card3" class="card cards-3">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/de9edf4baf034c23a13587c19ef41ef2.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>MEDIUM ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Columbia</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Cân bằng & Có vị hạt dẻ</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card4" class="card cards-4">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/d6233d53bd424e869a9af1552c6eb7bb.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>BLONDE ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Guatemala Antigua</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Ca cao & Gia vị dịu</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div  id="card5" class="card cards-5">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/c9677d6573604762ad472698f6398f46.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>BLONDE ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>House Blend</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Tươi & Cân bằng</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card6"  class="card cards-6">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/7a6c6ffc62ee4e17a992cee3898918ba.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>BLONDE ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Kenya</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Nhiều nước & Tổng hợp</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card7" class="card cards-7">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/266097ba9d1547afb4e1805056728b34.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>DARK ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Caffè Verona ®</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Ca cao Sẫm màu & Ngọt đậm</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card8"  class="card cards-8">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/460a07bdf9354f8e89c4be3a372cc6f8.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>DARK ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Decaf Komodo Dragon Blend ®</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Hương vị thảo mộc cay nông và dược thảo</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card9"  class="card cards-9">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/08b17b4679d349298b8ca09249898c45.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>DARK ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Decaf Sumatra</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Hương vị của đất và thảo mộc</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div  id="card10" class="card cards-10">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/f82cc71a44c1427382f152dffb22b212.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>DARK ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Esspresso Roast</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Đậm đà & có vị Caramel</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card11" class="card cards-11">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/ba003714b7494e948af043d5f0664669.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>DARK ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Fair Trade Certified™ Italian Roast</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Roasty & Sweet</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div  id="card12" class="card cards-12">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/c2b84ceda5f24a3da4e3fda0a01cb6f7.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>BLONDE ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>French Roast</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Cực kỳ đậm đà & Tỏa khói</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card13" class="card cards-13">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/bd51423c2fc24b4b807c42101c536a21.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>DARK ROAST| <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Komodo Dragon Blend®</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Hương vị thảo mộc cay nồng và dược thảo</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card14" class="card cards-14">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/39db2a07068f4de4bdf25ce87b1c451a.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>DARK ROAST | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Sumatra</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Tự nhiên & Có vị thảo mộc</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card15" class="card cards-15">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/1346efffcf64423b807ec07e9edc82a0.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Anniversary Blend</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Mượt mà và một chút vị gia vị và hoàn hảo với vị bơ và caramel.</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card16" class="card cards-16">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/ae52387744b347dfbc75fdb2ce7a068b.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Brezza Blend</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Hương thảo mộc</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card17" class="card cards-17">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/22870d1b5da44b07ae9ef7a5e260d504.png" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Ethiopia</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Vị chua của trái cây và vị cocoa</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card18" class="card cards-18">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/60a3da3381f5482a9da31aaeafd1fff8.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Guatemala Casi Cielo™</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Vị đắng cocoa, vị chanh</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card19" class="card cards-19">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/6f88b988980748b586cc3e4569ba1891.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Iced Coffee Blend</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Hương thơm caramel & cola</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card20" class="card cards-20">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/8602195eccd143f1865e1715259be9ed.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>South of the Clouds</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Có vị dược thảo</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card21" class="card cards-21">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/8aeb337c91af42aeb4dfd60f65615efd.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>
+                                Starbucks Tribute Blend™</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Nồng và đậm</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card22" class="card cards-22">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/4c726117710446d4847cb231442242fe.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Starbucks® Autumn Blend</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Hương thảo, gia vị ngọt, cocoa</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card23" class="card cards-23">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/0dd48b347ddc485a8613b8e7b83b35ac.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Starbucks® Christmas Blend</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Bold, spicy, caramelly</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                    <div id="card24" class="card cards-24">
+                        <div class="cards-img">
+                            <img src="https://globalassets.starbucks.com/assets/7491807b919b4e73b4dd303898f0c30c.jpg" alt="">
+                        </div>
+                        <div class="cards-type">
+                            <p>SEASONAL FAVORITES | <span class="type-note">Whole Bean</span></p>
+                        </div>
+                        <div class="cards-name">
+                            <p>Starbucks® Christmas Blend Espresso Roast</p>
+                        </div>
+                        <div class="cards-desc">
+                            <p>Ngọt ngào cộng với một chút vị gia vị</p>
+                        </div>
+                        <div class="cards-more">
+                            <p>Tìm hiểu thêm ˅</p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script>
+        const hide = document.getElementById("button1");
+        const display = document.getElementById("button2");
+        const form = document.getElementById("check-cont");
+        hide.addEventListener("click",hidebtn);
+        display.addEventListener("click",displaybtn);
+        function hidebtn(){
+            hide.style.display="none";
+            display.style.display="block";
+            form.style.display="none";
+        }
+        function displaybtn(){
+            hide.style.display="block";
+            display.style.display="none";
+            form.style.display="flex";
+        }
+        function check() {
+          var checkBox1 = document.getElementById("CPNH");
+          var checkBox2 = document.getElementById("QUA");
+          var checkBox3 = document.getElementById("VANG");
+          var checkBox4 = document.getElementById("VUA");
+          var checkBox5 = document.getElementById("SAMMAU");
+          var checkBox6 = document.getElementById("THUONG");
+          var checkBox7 = document.getElementById("DKC");
+          var checkBox8 = document.getElementById("KCHV");
+          var card1 = document.getElementById("card1")
+          var card2 = document.getElementById("card2")
+          var card3 = document.getElementById("card3")
+          var card4 = document.getElementById("card4")
+          var card5 = document.getElementById("card5")
+          var card6 = document.getElementById("card6")
+          var card7 = document.getElementById("card7")
+          var card8 = document.getElementById("card8")
+          var card9 = document.getElementById("card9")
+          var card10 = document.getElementById("card10")
+          var card11 = document.getElementById("card11")
+          var card12 = document.getElementById("card12")
+          var card13 = document.getElementById("card13")
+          var card14 = document.getElementById("card14")
+          var card15 = document.getElementById("card15")
+          var card16 = document.getElementById("card16")
+          var card17 = document.getElementById("card17")
+          var card18 = document.getElementById("card18")
+          var card19= document.getElementById("card19")
+          var card20 = document.getElementById("card20")
+          var card21 = document.getElementById("card21")
+          var card22 = document.getElementById("card22")
+          var card23 = document.getElementById("card23")
+          var card24 = document.getElementById("card24")
+          var text = document.getElementById("cards-container")
+        
+          if (checkBox3.checked == true){
+            card3.style.display = "none";
+            card4.style.display = "none";
+            card5.style.display = "none";
+            card6.style.display = "none";
+            card7.style.display = "none";
+            card8.style.display = "none";
+            card9.style.display = "none";
+            card10.style.display = "none";
+            card11.style.display = "none";
+            card12.style.display = "none";
+            card13.style.display = "none"; 
+            card14.style.display = "none";
+            card15.style.display = "none";
+            card16.style.display = "none";
+            card17.style.display = "none";
+            card18.style.display = "none";
+            card19.style.display = "none";
+            card20.style.display = "none";
+            card21.style.display = "none";
+            card22.style.display = "none";
+            card23.style.display = "none";
+            card24.style.display = "none";
+          } else {
+            card1.style.display = "block";
+            card2.style.display = "block";
+            card3.style.display = "block";
+            card4.style.display = "block";
+            card5.style.display = "block";
+            card6.style.display = "block";
+            card7.style.display = "block";
+            card8.style.display = "block";
+            card9.style.display = "block";
+            card10.style.display = "block";
+            card11.style.display = "block";
+            card12.style.display = "block";
+            card13.style.display = "block";
+            card14.style.display = "block";
+            card15.style.display = "block";
+            card16.style.display = "block";
+            card17.style.display = "block";
+            card18.style.display = "block";
+            card19.style.display = "block";
+            card20.style.display = "block";
+            card21.style.display = "block";
+            card22.style.display = "block";
+            card23.style.display = "block";
+            card24.style.display = "block";
+          }
+          if (checkBox1.checked == true){
+            card3.style.display = "none";
+            card4.style.display = "none";
+            card5.style.display = "none";
+            card6.style.display = "none";
+            
+          } else {
+            card3.style.display = "block";
+            card4.style.display = "block";
+            card5.style.display = "block";
+            card6.style.display = "block";
+          }
+          if (checkBox2.checked == true|checkBox6.checked == true|checkBox7.checked == true|checkBox8.checked == true){
+            text.style.display = "none";
+            
+          } else {
+            text.style.display = "flex";
+          }
+          if (checkBox4.checked == true|checkBox5.checked == true){
+            card1.style.display = "none";
+            card2.style.display = "none";
+            card7.style.display = "none";
+            card8.style.display = "none";
+            card9.style.display = "none";
+            card10.style.display = "none";
+            card11.style.display = "none";
+            card12.style.display = "none";
+            card13.style.display = "none";
+            card14.style.display = "none";
+            card15.style.display = "none";
+            
+          } else {
+            card1.style.display = "block";
+            card2.style.display = "block";
+            card7.style.display = "block";
+            card8.style.display = "block";
+            card9.style.display = "block";
+            card10.style.display = "block";
+            card11.style.display = "block";
+            card12.style.display = "block";
+            card13.style.display = "block";
+            card14.style.display = "block";
+            card15.style.display = "block";
+          }
+        }
+        
+    </script>
+
+
+
+
+
+
+
+
+<!-- DAY LA FOOTER -->
+
+
+<footer>
+
+    <div class="footer-top">
+        <ul class="footer-top__icon">
+            <li class="footer-top__icon-link">
+                <a href=""><i class="footer__facebook fab fa-facebook-f"></i></a>
+            </li>
+            <li class="footer-top__icon-link">
+                <a href=""><i class="footer__instagram fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-mid">
+        <div class="footer-mid__grid">
+            <div class="footer-mid__grid--row">
+                <div class="footer-mid__grid--col1-3">
+                    <a href="">
+                        <h3 class="check-title">Về chúng tôi</h3>
+                    </a>
+                    <ul class="footer-mid__list">
+                        <li><a href="">Di Sản</a></li>
+                        <li><a href="">Công Ty</a></li>
+                        <li><a href="">Cơ  hội nghề nghiệp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-mid__grid--col1-3">
+                    <a href="">
+                        <h3 class="check-title">Dịch vụ khách hàng</h3>
+                    </a>
+                    <ul class="footer-mid__list">
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-mid__grid--col1-3">
+                    <h3 class="check-title">Liên kết nhanh</h3>
+                    <ul class="footer-mid__list">
+                        <li><a href="">Bộ định vị cửa hàng</a></li>
+                        <li><a href="">Dành cho đối tác</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom__language">
+                    <a href="starbucks.html"><img src="../hinhanh/2560px-Flag_of_Vietnam.svg.png" alt="Flag" class="VN"></a>
+                    <p class="footer-bottom__language--left"><b>>></b></p>
+                    <p class="footer-bottom__language--vn">Tiếng Việt (VN)</p>
+                    <a href="starbucks.html" class="footer-bottom__language--eng"><b>English</b></a>
+                    <p class="footer-bottom__language--right"><b>>></b></p>
+                </div>
+
+                <div class="footer-bottom__links">
+                    <nav class="footer-bottom__nav">
+                        <a href="" class="footer-bottom__links--daudoan">Khả năng truy cập Web</a>
+                        <div class="footer-bottom__links2-5">
+                            <a href="">Chính Sách Bảo Mật Thông Tin</a>
+                            <a href="">Điều Khoản Sử Dụng</a>
+                            <a href="">Sơ Đồ Trang Web</a>
+                            <a href="">Tùy Chọn Cookie</a>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom__copyrights">
+                    <p class="footer__copyright">© 2019 Starbucks Coffee Company. Mọi quyền được bảo lưu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.card__header-top {
+    background-color: #333333;
+    height: 100px;
+}
+
+.card__header-topleft {
+    float: left;
+    padding: 17px;
+}
+
+.card__header--menu {
+    display: block;
+    position: relative;
+    float: right;
+}
+
+.card__header--menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 4%;
+}
+
+.card__header--menu ul li {
+    margin-left: 30px;
+    font-size: 95%;
+}
+
+.card__header--menu ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+#card__FAQs--font {
+    text-transform: none;
+}
+
+#card__signinpage {
+    margin-right: 25px;
+    padding: 10px 20px;
+    background-color: #02a860;
+    border-radius: 50px;
+    font-size: 85%;
+    text-transform: none;
+    font-weight: bolder;
+}
+
+#card__signinpage:hover {
+    border: none;
+    cursor: default;
+}
+
+.card__header--menu ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#card-signin__layout {
+    clear: both;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 240px 620px;
+    grid-template-areas: "top top" "left right";
+}
+
+#card-signin__top {
+    grid-area: top;
+    width: 100%;
+    box-shadow: 0 -1px 10px 1px #c2c2c2;
+}
+
+.card-signin__banner {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*left*/
+
+#card-signin__left {
+    grid-area: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 5%;
+}
+
+.card-signin__left--content {
+    width: 50%;
+    color: #4b4b4b;
+    font-size: 18px;
+}
+
+.card-signinbox {
+    margin-bottom: 30px;
+}
+
+.card-signinbox span {
+    font-size: 16px;
+    display: inline-block;
+    color: #888880;
+    margin-bottom: 5px;
+}
+
+.card-signinbox input {
+    width: 100%;
+    padding: 10px 5px;
+    outline: none;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid #ceceec;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: transparent;
+}
+
+#card-signin--Checkbox {
+    margin: 0 10px;
+}
+
+.card-signin--saveinfo {
+    margin-top: 40px;
+}
+
+.card-signin--change {
+    display: flex;
+    margin-top: 10px;
+}
+
+.card-signin--change a {
+    color: #39c1c0;
+    padding-bottom: 1px;
+    text-decoration: none;
+    border-bottom: 2px solid #39c1c0;
+}
+
+.card-signin--button {
+    float: right;
+}
+
+.card-signin--button input {
+    background-color: #02a860;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+/*right*/
+
+#card-signin__right {
+    grid-area: right;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 6px solid #c0a65c;
+}
+
+.card-signin__right-content {
+    width: 60%;
+    height: 550px;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+
+.card-signin__right-content span {
+    font-size: 70%;
+    position: absolute;
+}
+
+.card-signin__right--title {
+    font-size: 27px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.card-signin__right--subtitle {
+    font-size: 20px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-signin__right--texts {
+    font-size: 19px;
+    color: #4b4b4b;
+}
+
+.card-signin__right--rewards {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.card-signin--1streward .card-signin--2ndreward .card-signin--3rdreward {
+    height: 110px;
+}
+
+.card-signin__right--rewards img {
+    height: 65px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-signin__right--rewards p {
+    text-align: center;
+    font-size: 19px;
+    width: 190px;
+    color: #4b4b4b;
+}
+
+.card-signuppage a {
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 12px 32px;
+    background-color: #333333;
+    border-radius: 50px;
+    color: white;
+    float: right;
+}
+
+.card-signuppage a:hover {
+    margin-top: -2px;
+    box-shadow: 0 1px 10px 1px #888888;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #f0f0f0;
+}
+
+.card__footer--content {
+    color: #706e6e;
+    margin: 0 20px;
+}
+
+.card__footer--content a {
+    color: #706e6e;
+    text-decoration: none;
+}
+
+.card__footer-top {
+    padding-top: 10px;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__footer-top a:hover {
+    text-decoration: underline;
+}
+
+.card__footer-top--col {
+    display: block;
+    width: 25%;
+}
+
+.card__footer-top--colbox {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.card__footer-top--colbox li {
+    margin: 2% 0;
+}
+
+.card__footer-top--title a {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card__footer-bot {
+    margin-top: 10px;
+    padding-bottom: 1%;
+    font-size: 50%;
+    font-size: 90%;
+}
+
+.footer-bottom {
+    margin-left: 20px;
+    padding-bottom: 3%;
+    font-size: 50%;
+}
+
+.footer-bottom__language {
+    display: flex;
+    height: 22px;
+}
+
+.VN {
+    height: 12px;
+    display: block;
+    margin-top: 25%;
+}
+
+.footer-bottom__language--left {
+    color: #333333;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 3px 15px 3px 5px;
+    padding-right: 15px;
+    border-right: 1px solid #b3b3b3;
+}
+
+.footer-bottom__language--vn {
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.footer-bottom__language--eng {
+    color: #333333;
+    font-size: 13px;
+    margin: 2px 0;
+    line-height: 20px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #b3b3b3;
+}
+
+.footer-bottom__language--right {
+    margin: 5px 10px;
+    font-size: 10px;
+}
+
+.footer-bottom__nav {
+    display: block;
+    margin: 13px 0;
+    display: flex;
+}
+
+.footer-bottom__nav a {
+    padding: 0 10px;
+    font-size: 15px;
+    font-size: 85%;
+}
+
+.footer-bottom__links--daudoan {
+    margin-left: -10px;
+}
+
+.footer-bottom__links2-5 a {
+    padding: 0 10px;
+    border-left: 1px solid #b3b3b3;
+}
+
+.footer__copyright {
+    font-size: 11px;
+}

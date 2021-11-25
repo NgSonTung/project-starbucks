@@ -1,0 +1,12 @@
+@media (max-width: 740px) {
+    .menu3{
+        display: none;
+    }
+    .menu36{
+        display: none   ;
+    }
+    .menu35{
+        text-align: right;
+    }
+
+}
