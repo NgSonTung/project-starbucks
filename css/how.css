@@ -286,8 +286,7 @@ main{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 35px;
+    height: fit-content;
 }
 .banner-text{
     margin: 0 auto;
@@ -322,14 +321,16 @@ p{
 }
 
 .caphe-banner3-desc-icon{
-    display: grid;
-    grid-template-columns: 1fr 90px 90px 90px 90px 1fr;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    column-gap: 40px;
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 500px;
+    justify-content: space-around;
+    height: 140px;
 }
 .caphe-banner3-desc-icon1{
-    grid-column-start: 2;
+    position: relative;
+    height: 80px;
 }
 .caphe-banner3-desc-icon1-frame0{
     position:absolute ;
@@ -389,7 +390,6 @@ p{
     letter-spacing: 1px;
     word-spacing: 1px;
     text-align: center;
-    position: relative;
 }
 .caphe-banner3-desc-icon1-desc a p{
     color: #ffffffdb;
@@ -403,7 +403,8 @@ p{
 
 
 .caphe-banner3-desc-icon2{
-    grid-column-start: 3;
+    position: relative;
+    height: 80px;
 }
 .caphe-banner3-desc-icon2-frame0{
     position:absolute ;
@@ -476,7 +477,8 @@ p{
 
 
 .caphe-banner3-desc-icon3{
-    grid-column-start: 4;
+    position: relative;
+    height: 80px;
 }
 .caphe-banner3-desc-icon3-frame0{
     position:absolute ;
@@ -547,7 +549,8 @@ p{
 
 
 .caphe-banner3-desc-icon4{
-    grid-column-start: 5;
+    position: relative;
+    height: 80px;
 }
 .caphe-banner3-desc-icon4-frame0{
     position:absolute ;
@@ -660,13 +663,12 @@ p{
     padding-top: 10px;
 }
 .triangle{
-    width: 0;
-    height: 0;
+
     border-left: 15px solid transparent;
     border-right:15px solid transparent;
     border-bottom: 13px solid #F7F7F7; 
-    left: 430px;
-    bottom: -39px;
+    left: 385px;
+    bottom: -65px;
     transition: left .4s ease-in-out;
     position: absolute;
 }
@@ -851,14 +853,117 @@ footer a:hover {
 
 
 @media screen and (max-width: 740px) {
+    main{
+        padding-bottom: 0;
+    }
     .how{
         width: fit-content;
         padding: 0;
     }
+    .banner{
+        background-position: -500px -200px;
+    }
     .banner-text{
         width: fit-content;
+        margin: 0 30px;
+        height:  250px;
+    }
+    .banner-title1{
+        font-size: 14px;
+        padding-top: 40px;
+        word-spacing: 1px;
+        letter-spacing: 2px;
+    }
+    .banner-title2{
+        font-size: 26px;
+        padding: 10px 0;
+    }
+    .banner-desc{
+        font-size: 15px;
+        line-height: 25px;
+        padding-bottom: 20px;
+        word-spacing: 1px;
+    }
+    .triangle{
+        display: none;
+    }
+    #res-triangle{
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 10px solid white;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        transition: top .2s ease-in-out;
     }
     .caphe-banner3-desc-icon{
-        column-gap: 0;
+        flex-direction: column;
+        display: flex;
+        height: auto;
+        margin: 0;
+        padding-left: 40px;
+        width: auto;
+        background-color: #1B1F23;
+        position: relative;
+    }
+    .caphe-banner3-desc-icon1{
+        padding-top: 10px;
+    }
+    .caphe-banner3-desc-icon1-desc{
+        white-space: nowrap;
+        position: absolute;
+        left: 80px;
+        margin: 30px 0;
+        font-size: 14px;
+    }
+    .caphe-banner3-desc-icon2-desc{
+        white-space: nowrap;
+        position: absolute;
+        left: 80px;
+        margin: 20px 0;
+        text-align: left;
+        font-size: 14px;
+    }
+    .caphe-banner3-desc-icon3-desc{
+        white-space: nowrap;
+        position: absolute;
+        left: 80px;
+        margin: 20px 0;
+        font-size: 14px;
+    }
+    .caphe-banner3-desc-icon4-desc{
+        white-space: nowrap;
+        position: absolute;
+        left: 80px;
+        margin: 20px 0;
+        font-size: 14px;
+    }
+    .how{
+        margin-top: 30px;
+        padding-bottom: 100px;
+    }
+    .step{
+        margin-bottom: 40px;
+    }
+    .stepimg{
+        margin: auto;
+        padding: 0 30px;
+        margin-top: 20px;
+
+    }
+    .stepimg img{
+        margin: 0;
+        width: 100%;
+    }
+    .step-text{
+        padding: 0 30px;
+    }
+    .steptitle p{
+        font-size: 28px;
+    }
+    .step4{
+        margin-bottom: 0;
     }
 }
