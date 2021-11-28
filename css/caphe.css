@@ -1,4 +1,4 @@
- /* CSS CUA MENU/HEADER */
+/* CSS CUA MENU/HEADER */
 body{
     margin: 0;
     background-color: white;
@@ -238,7 +238,6 @@ div.menu10 ul{
     width: 140px;
 }
 .menu14{
-    word-break: break-all;
     font-size: 15px;
     margin-top: 4px ;
     white-space: normal;
@@ -261,6 +260,9 @@ div.menu10 ul{
 }
 .menu3bars{
     display: none;
+}
+.menu12 a{
+    white-space:  nowrap;
 }
 
 

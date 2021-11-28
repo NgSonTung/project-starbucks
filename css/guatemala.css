@@ -2,7 +2,6 @@
 body{
     margin: 0;
     background-color: white;
-    white-space: nowrap;
     font-family: sans-serif;
 }
 header{
@@ -17,17 +16,16 @@ header{
 }
 .menu2{
     margin-top: 12px;
-    padding-right: 40px;
-    margin-left: -50px;
+    padding: 0 20px;
+    
 }
 .menu37{
     display: flex;
     justify-content:center ;
-    padding: 6px 0;
+    padding-bottom: 16px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 10px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .menu34{
-    margin-left: 0px;
     margin-top: 15px;
     font-family: sans-serif;
     font-size: 14px;
@@ -107,7 +105,7 @@ ul{
     left: 0px;
     width: 100%;
     position: absolute;
-    top: 112px;
+    top: 105px;
     background-color: rgb(0, 0, 0);
     
 } 
@@ -137,6 +135,7 @@ ul.menu4 li:hover ul.menu9{
     font-size: 13px;
     font-weight: bold;
     padding: 0 30px;
+    white-space: nowrap;
 }
 .menu12{
     margin-left: -10px;
@@ -239,7 +238,6 @@ div.menu10 ul{
     width: 140px;
 }
 .menu14{
-    word-break: break-all;
     font-size: 15px;
     margin-top: 4px ;
     white-space: normal;
@@ -251,12 +249,26 @@ div.menu10 ul{
     color: white;
 }
 .menu32{
-    margin-left: 200px;
+    margin-left: 10%;
 }
 .menu36{
     margin: 4px 6px;
+    white-space: nowrap;
 }
-        /* KET THUC CSS MENU */
+.menu9 ul li a:hover{
+    background: green;
+}
+.menu3bars{
+    display: none;
+}
+.menu12 a{
+    white-space:  nowrap;
+}
+
+
+
+
+            /* KET THUC CSS MENU */
 
 .main{
     background-image: url('../hinhanh/Coffee-Finder-Background_tcm90-3968.png');

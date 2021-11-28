@@ -3,7 +3,6 @@ body{
     margin: 0;
     background-color: white;
     font-family: sans-serif;
-    user-select: none;
 }
 header{
     background-color: #f7f7f7;
@@ -239,7 +238,6 @@ div.menu10 ul{
     width: 140px;
 }
 .menu14{
-    word-break: break-all;
     font-size: 15px;
     margin-top: 4px ;
     white-space: normal;
@@ -263,11 +261,17 @@ div.menu10 ul{
 .menu3bars{
     display: none;
 }
+.menu12 a{
+    white-space:  nowrap;
+}
 
 
 
 
             /* KET THUC CSS MENU */
+
+
+            
 .mapwrap{
     background-color: #EDEDEE;
     width: fit-content;
