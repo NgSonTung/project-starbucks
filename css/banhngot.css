@@ -23,7 +23,6 @@ header{
 .menu37{
     display: flex;
     justify-content:center ;
-    padding-bottom: 16px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 10px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .menu34{
@@ -60,6 +59,7 @@ ul{
 }
 .menu7{
     margin-top: 46px;
+    width: fit-content;
 }
 .menu5{
     color: black;
@@ -79,7 +79,7 @@ ul{
     font-size: 14px;
 }
 .menu5:hover{
-    background-color: black;
+    background-color: #1D1D1D;
     color: white;
 }
 .menu31:hover{
@@ -106,17 +106,21 @@ ul{
     left: 0px;
     width: 100%;
     position: absolute;
-    top: 105px;
+    top: 106px;
     background-color: rgb(0, 0, 0);
-    
 } 
 ul.menu9{
-    padding: 0px 300px;
+    margin: auto;
+    width: fit-content;
     overflow: hidden;
     height: 0;
     max-height: 0;
 }
-ul.menu4 li:hover ul.menu9{
+.menu4:hover .menu5{
+    background-color: #1D1D1D;
+    color: white;
+}
+ul.menu4:hover ul.menu9{
     height:auto;
     max-height: 1000px;
     transition-property: max-height;
@@ -126,7 +130,7 @@ ul.menu4 li:hover ul.menu9{
 }
 
 .menu8{
-    background-color: rgb(21, 21, 21);
+    background-color: #1D1D1D;
 }
 .menu9{
     background-color: rgb(29, 29, 29);
@@ -163,7 +167,7 @@ ul.menu4 li:hover ul.menu9{
     width: 78%;
     border: none;
     height: 1px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.301);
     margin-top: 62px;
     margin-left: 10px;
 }
@@ -270,7 +274,6 @@ div.menu10 ul{
 
 
             /* KET THUC CSS MENU */
-
 
             
 #banhngot{
