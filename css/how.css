@@ -492,7 +492,7 @@ p{
 }
 .caphe-banner3-desc-icon3-frame1{
     position:absolute ;
-    margin-top: 2px;
+    margin-top: 1px;
     z-index: 3;
     opacity: 0;
 }
@@ -667,7 +667,7 @@ p{
     border-left: 15px solid transparent;
     border-right:15px solid transparent;
     border-bottom: 13px solid #F7F7F7; 
-    left: 385px;
+    left: 5px;
     bottom: -65px;
     transition: left .4s ease-in-out;
     position: absolute;
