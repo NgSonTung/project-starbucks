@@ -290,17 +290,19 @@ div.menu10 ul{
     padding-bottom: 10px;
 }
 .bigcard{
-    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: white;
-    grid-template-columns: 1fr 700px 600px 1fr;
-    column-gap: 10px;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding: 31px 20px;
 }
 .bigcard-img{
-    height: 440px;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    max-height: 440px;
+    overflow: hidden;
+}
+.bigcard-text{
+    max-width: 630px;
+    margin-left: 50px;
 }
 .bigcard-name{
     font-family: "Crete Round", Georgia, "Times New Roman", serif;
@@ -368,6 +370,7 @@ span{
     font-size: 14px;
     border-bottom: dotted black 1px;
     width: 250px;
+    white-space: nowrap;
 }
 .locate2:hover{
     background-color:rgb(184, 184, 184) ;
@@ -385,21 +388,18 @@ span{
     padding-bottom: 20px;
 }
 .bottom-cards{
-    display: grid;
-    grid-template-columns: 1fr 340px 340px 450px 1fr;
-    column-gap: 90px;
+    display: flex;
+    margin: auto;
+    width: 1310px;
 }
 .bottom-cards1{
-    grid-column-start: 2;
-    grid-column-end: 3;
     background-color: white;
     padding: 32px;
 }
 .bottom-cards2{
-    grid-column-start: 3;
-    grid-column-end: 4;
     background-color: white;
     padding: 32px;
+    margin-left: 100px;
 }
 .bottom-cards-img img{
     height: 280px;
@@ -451,7 +451,7 @@ span{
 
 
 
-           /* CSS CUA FOOTER */
+          /* CSS CUA FOOTER */
 footer {
     font-family: sans-serif;
     margin: 0 auto;
@@ -459,27 +459,27 @@ footer {
 
 .footer-top {
     background-color: #f0f0f0;
-    display: grid;
-    grid-template-columns: 1fr 1500px 1fr;
-    border-top: #fff 3px solid;
-    border-bottom: #fff 3px solid;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-top__icon {
-    grid-column-start: 2;
-    margin: auto 0;
+    margin: auto 0px;
     height: 110px;
-    position: relative;
+    width: 100px;
     display: flex;
-    justify-content: baseline;
+    position: relative;
+    right: 680px;
 }
 
 .footer-top__icon-link {
-    margin: auto 1%;
+    margin: auto 20%;
+    
 }
 
 .footer__facebook {
     font-size: 30px;
+
 }
 
 .footer__instagram {
@@ -488,7 +488,7 @@ footer {
 
 .footer-mid {
     background-color: #f7f7f7;
-    
+    border-top: 3px solid #fff;
 }
 
 .footer-mid__grid {
@@ -505,7 +505,7 @@ footer {
     background-size: 18.4px;
     background-repeat: no-repeat;
     background-position: 98.5% 0;
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .footer-mid__grid--col1-3 {
@@ -599,3 +599,51 @@ footer a:hover {
 }
 
         /* KET THUC CSS FOOTER */
+
+@media screen and (max-width: 740px) {
+    .main{
+        height: fit-content;
+        padding-bottom: 1px;
+    }
+    .title{
+        margin-left: 0;
+    }
+    .bigcard-text{
+        margin-left: 0;
+    }
+    .locate1{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .locate2{
+        margin-top: 0;
+    }
+    .mid-desc{
+        margin-left: 0;
+        padding: 25px 20px;
+    }
+    .bottom-cards{
+        width: fit-content;
+        flex-wrap: wrap;
+        
+    }
+    .bottom-cards1{
+        margin: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .bottom-cards2{
+        margin: 40px auto 0;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .bottom-cards-img{
+        max-width: 250px;
+        width: auto;
+        height: 220px;
+        overflow: hidden;
+    }
+    .bottom-cards-img img{
+        width: auto;
+    }
+}
