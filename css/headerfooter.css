@@ -9,6 +9,7 @@ header{
     height: 100%;
     z-index: 10;
     position: relative;
+    transition: margin-bottom 0.3s ease-in-out;
 }
 .menu1{
     height: 10px;
