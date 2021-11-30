@@ -294,6 +294,15 @@
     
             </div>
             <div class="menu32">
+                <div id="map-icon1" class="map-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div id="map-icon2" class="map-icon">
+                    <i class="fas fa-location-arrow"></i>
+                </div>
+                <div id="map-icon3" class="map-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
                 <a class="menu33" href="Starbucks-map.html">
                     <div class="menu34">
                         <div class="menu35"><i class='fas fa-map-marker-alt'style='font-size:19px'></i></div>
@@ -623,6 +632,45 @@
         map.style.width="900px"
         arrowright.style.display="none";
         arrowleft.style.display="block";
+    }
+    
+    // HIEN THI RESPONSIVE
+    const mapIcon1 = document.getElementById("map-icon1");
+    const mapIcon2 = document.getElementById("map-icon2");
+    const mapIcon3 = document.getElementById("map-icon3");
+    mapIcon1.addEventListener("click", mob1);
+    function mob1 (){
+        mapIcon1.style.color = "black";
+        mapIcon1.style.borderBottom= "black solid 2px"
+        mapIcon2.style.color=(" rgb(0, 104, 0)")
+        mapIcon2.style.borderBottom=("none")
+        mapIcon3.style.color=(" rgb(0, 104, 0)")
+        mapIcon3.style.borderBottom=("none")
+        wrapper.style.display="block"
+        guidewrap.style.display="none"
+        leftbar.style.height="650px"
+    }
+    mapIcon2.addEventListener("click", mob2);
+    function mob2 (){
+        mapIcon2.style.color = "black";
+        mapIcon2.style.borderBottom= "black solid 2px"
+        mapIcon1.style.color=(" rgb(0, 104, 0)")
+        mapIcon1.style.borderBottom=("none")
+        mapIcon3.style.color=(" rgb(0, 104, 0)")
+        mapIcon3.style.borderBottom=("none")
+        guidewrap.style.display="block"
+        wrapper.style.display="none"
+        leftbar.style.height="650px"
+    }
+    mapIcon3.addEventListener("click", mob3);
+    function mob3 (){
+        mapIcon3.style.color = "black";
+        mapIcon3.style.borderBottom= "black solid 2px"
+        mapIcon1.style.color=(" rgb(0, 104, 0)")
+        mapIcon1.style.borderBottom=("none")
+        mapIcon2.style.color=(" rgb(0, 104, 0)")
+        mapIcon2.style.borderBottom=("none")
+        leftbar.style.height="0"
     }
 </script>
 </body>

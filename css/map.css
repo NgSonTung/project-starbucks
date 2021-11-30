@@ -1,4 +1,7 @@
 /* CSS CUA MENU/HEADER */
+*{
+    user-select: none;
+}
 body{
     margin: 0;
     background-color: white;
@@ -426,7 +429,7 @@ div.menu10 ul{
 .toggledisplay{
     display: flex;
     border-top: 2px #EDEDED solid;
-    border-bottom: 2px #EDEDED solid;
+    border-bottom: 1px #EDEDED solid;
     padding-left: 35px;
 }
 .toggledisplay p{
@@ -539,7 +542,9 @@ div.menu10 ul{
     margin-left: -30px;
     margin-top: 30px;
 }
-
+.map-icon{
+    display: none;
+}
 
 
 
@@ -701,4 +706,99 @@ footer a:hover {
     font-size: 11px;
 }
 
+
         /* KET THUC CSS FOOTER */
+
+@media screen and (max-width: 740px) {
+    .menu32{
+        margin-left: 0;
+    }
+    .menu33{
+        display: none;
+    }
+    .map-icon{
+        display: block;
+    }
+    .map-icon{
+        display: block;
+        font-size: 20px;
+        color: rgb(0, 104, 0);
+        margin-top: 15px;
+        padding: 0 13px;
+        padding-bottom: 7px;
+    }
+    #map-icon1{
+        color: black;
+        border-bottom: 2px black solid;
+    }
+    #map{
+        position: absolute;
+        z-index: 1;
+    }
+    .arrow{
+        display: none !important;
+    }
+    .mapwrap{
+        padding: 0;
+        width: 100%;
+        height: 650px;
+    }
+    .leftbar{
+        width: 100%;
+        height: 650px;
+        position: absolute;
+        overflow:hidden;
+        z-index: 10;
+        transition: height .2s ease-in-out;
+    }
+    .map-location-tag1{
+        display: none;
+    }
+    .map-location-tag2{
+        display: none;
+    }
+    .locationwrap{
+        width: 100%;
+    }
+    .map-location{
+        margin: 0;
+        padding-left: 20px;
+    }
+    .toggledisplay{
+        padding-left: 20px;
+    }
+    .toggledisplay p{
+        width: 80%;
+    }
+    #plus{
+        left: 15px;
+    }
+    #minus{
+        left: 15px;
+    }
+    .guidewrap{
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+    }
+    .guide-top{
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .guide-form{
+        margin-left:5%;
+    }
+    .nav-line{
+        width: auto;
+    }
+    #inversebtn{
+        right: 0;
+        margin-right: 5%;
+        top: 24px;
+    }
+    #map{
+        width: 100%;
+        height: 650px;
+    }
+}
