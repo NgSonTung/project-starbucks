@@ -94,3 +94,127 @@
     /* home   responsive */
    
 }
+@media screen and (min-width: 768px) and (max-width: 769px) {
+    .menu6{
+        top: 184px !important;
+    }
+    .menu9{
+        width: auto !important;
+        padding-left: 40px !important;
+    }
+    .menu10{
+        margin-bottom: 80px;
+    }
+    .menu10 li{
+        width: 150px !important;
+        margin-right: 30px !important;
+    }
+    .menu16 li{
+        width: 150px !important;
+        margin-right: 30px !important;
+    }
+    .menu13 , .menu21 , .menu23 , .menu25 , .menu27 , .menu29{
+        display: none;
+    }
+    .menu24,.menu26,.menu28,.menu30{
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .menu5{
+        white-space: nowrap;
+    }
+    .menu37{
+        position: relative;
+        justify-content: left;
+        flex-wrap: wrap;
+        padding-top: 46px;
+    }
+    .menu4{
+        width: fit-content;
+    }
+    .menu3{
+        margin-left: 10px;
+    }
+    .menu7{
+        margin-top: 0;
+    }
+    .menu2{
+        margin-top: -30px;
+    }
+    .menu32{
+        margin-left: 0px;
+        position: absolute;
+        right: 30px;
+        top: 0;
+    }
+    .menu6{
+        top: 96px;
+        width: 100%;
+    }
+    .menu9{
+        padding: 0;
+        width: 100%;
+    }
+    .menu10 li{
+        width: 180px;
+        margin-right: 10px;
+    }
+    .menu11{
+        white-space: normal;
+        padding: 0;
+    }
+    .menu12{
+        padding-left: 10px;
+    }
+    .menu12 a{
+        white-space: normal;
+    }
+    .menu16 li{
+        width: 180px;
+        margin-right: 10px;
+    }
+    .menu21{
+        margin-left: 400px;
+    }
+    .menu23{
+        margin-left: 0px;
+    }
+    .menu25{
+        margin-left: 400px;
+    }
+    .menu20{
+        margin-left: -40px;
+        padding-bottom: 50px;
+    }
+    .menu22{
+        margin-left: 0;
+    }
+    .menu26{
+        margin-left: 0;
+    }
+    .menu27{
+        margin-left: 200px;
+    }
+    .menu28{
+        margin-left: 0;
+    }
+    .menu24{
+        margin-left: 0;
+    }
+    .menu20 li{
+        margin-right: 10px;
+    }
+    .menu18{
+        margin-left: 0;
+    }
+    .menu19{
+        padding: 0;
+    }
+    .menu29{
+        margin-left: 200px;
+    }
+    .menu30{
+        margin-left: 0;
+    }
+}
