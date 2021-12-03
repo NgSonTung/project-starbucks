@@ -278,7 +278,9 @@ div.menu10 ul{
 
 
 
-
+html:focus-within{
+    scroll-behavior: smooth;
+}
 .choose-main{
     background-image: url('../hinhanh/Coffee-Finder-Background_tcm90-3968.png');
     background-position: left top;
@@ -290,10 +292,13 @@ div.menu10 ul{
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
-    padding-left: 300px;
+}
+.choose-1 ,.choose-2,.choose-3{
+    margin: 0 auto;
+    width: 80%;
 }
 .choose-2,.choose-3{
-    margin-top: 300px;
+    margin-top: 500px;
 }
 .choose-3{
     padding-bottom: 400px;
@@ -573,7 +578,7 @@ footer a:hover {
         /* KET THUC CSS FOOTER */
 
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 767px) {
     
     .choose-main{
         padding-left: 0;
@@ -599,6 +604,9 @@ footer a:hover {
     .choose-note2{
         padding-left: 4px;
     }
+    .choose-3{
+        padding-top: 30px;
+    }
     .choose-circles{
         flex-wrap: wrap;
         justify-content: center;
@@ -619,5 +627,69 @@ footer a:hover {
     .choose-2{
         margin-bottom: 200px;
         padding-top: 30px;
+    }
+}
+
+/* responsive tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .choose-main{
+        padding-left: 0;
+        height: 750px;
+    }
+    .choose-title{
+        margin: 0 10px;
+    }
+    .choose-title h1{
+        font-size: 40px;
+    }
+    .choose-question{
+        font-size: 15px;
+        margin: -10px 10px;
+        white-space: nowrap;
+    }
+    .choose-question p:last-child{
+        display: none;
+    }
+    .choose-note{
+        margin-top: 15px ;
+    }
+    .choose-note2{
+        padding-left: 4px;
+    }
+    .choose-1,.choose-2,.choose-3{
+        width: 90%;
+    }
+    .choose-3{
+        padding-top: 30px;
+    }
+    .choose-circles{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .circle img{
+        width: 144px;
+        height: auto;
+        padding: 0 10px;
+    }
+    .circle-desc{
+        white-space: normal;
+        max-width: 130px;
+        margin: auto;
+    }
+    .circle{
+        margin: 10px 4px;
+    }
+    .choose-2{
+        margin-bottom: 200px;
+        padding-top: 30px;
+    }
+    .choose-question{
+        font-size: 30px;
+    }
+    .choose-note{
+        margin-top: 30px;
+    }
+    .choose-title p{
+        font-size: 17px;
     }
 }
