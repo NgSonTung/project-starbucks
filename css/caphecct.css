@@ -645,3 +645,34 @@ footer a:hover {
    width: 218px;
    }
 }
+
+        /* responsive tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .coffee-banner{
+        background-size: auto 100%;
+        
+    }
+    .banner-title{
+        max-width: 60%;
+        padding: 0 40px;
+        padding-top: 70px;
+        margin: 0;
+    }
+    .form-hide{
+        width: 100%;
+    }
+    #button1,#button2{
+        margin-left: 50px;
+    }
+    .check-container{
+        width: 90%;
+        margin: 0;
+    }
+    .check{
+        
+        margin-right: 30px;
+    }
+    .cards-title{
+        margin-left: 0;
+    }
+}

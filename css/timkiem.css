@@ -590,13 +590,19 @@ footer a:hover {
     .choose-title h1{
         font-size: 20px;
     }
+    .choose-note-content{
+        margin-left: -100px;
+    }
     .choose-question{
         font-size: 15px;
         margin: -10px 10px;
         white-space: nowrap;
     }
     .choose-question p:last-child{
-        display: none;
+        width: 200px;
+    }
+    .choose-note-content::before{
+        right: 35%;
     }
     .choose-note{
         margin-top: 15px ;
@@ -646,9 +652,6 @@ footer a:hover {
         font-size: 15px;
         margin: -10px 10px;
         white-space: nowrap;
-    }
-    .choose-question p:last-child{
-        display: none;
     }
     .choose-note{
         margin-top: 15px ;
