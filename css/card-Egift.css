@@ -1,0 +1,55 @@
+    main {
+        width: 60%;
+        margin: 50px auto;
+    }
+    
+    h2,
+    h3 {
+        font-weight: lighter;
+    }
+    
+    .Egift_cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        place-items: center;
+        grid-gap: 10px;
+    }
+    
+    .Egift_cards--content {
+        display: block;
+        margin-top: 30px;
+        height: 151px;
+    }
+    
+    .Egift_cards--content img {
+        width: 240px;
+        display: block;
+        box-shadow: 2px 2px 10px 0.5px #c7c5c5;
+    }
+    
+    .Egift_cards--content-text {
+        display: block;
+        position: absolute;
+        padding: 10px 0;
+        width: 278px;
+        color: #fff;
+        background: #02a860;
+        text-align: center;
+        margin: -55px -14px;
+        font-size: 15px;
+    }
+    
+    @media screen and (max-width: 767px) {
+        main {
+            margin-left: 5%;
+            width: 95%;
+        }
+        .footer-mid__grid--row {
+            background: none;
+        }
+        footer a,
+        .footer-bottom a,
+        .footer-bottom {
+            font-size: 12px;
+        }
+    }
