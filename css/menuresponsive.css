@@ -1,3 +1,6 @@
+.menu6{
+    top: 105px;
+}
 @media (max-width: 767px) {
     .menu2 img{
         height: 50px;
@@ -96,7 +99,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 769px) {
     .menu6{
-        top: 184px !important;
+        top: 183px !important;
     }
     .menu9{
         width: auto !important;
