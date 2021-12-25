@@ -643,16 +643,27 @@ input:checked~.card__container {
     color: white;
     text-align: center;
 }
-
-.card__samples-slides {
-    /* overflow: hidden; */
-    height: auto;
-    margin: auto;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.card__samples-main{
+    margin-top: 100px;
+    user-select: none;
 }
-
+.sliderwrapper{
+    overflow: hidden;
+}
+.card__samples-slides {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    transition: transform .4s ease-in-out;
+}
+.slideritem{
+    flex: 1 0 30%;
+    height: 100%;
+    width: 100%;
+}
 .card__samples-slides > div {
     height: 100%;
     display: block;
