@@ -289,18 +289,88 @@ div.menu10 ul{
     font-size: 2.5em;
     font-weight: 300;
 }
-.noidung1{
-    font-size: 2em;
+.noidunga{
+    font-size: 2em; 
 }
-.noidung2, .noidung3, .noidung4, .noidung5{
+.noidungb, .noidungc, .noidungd, .noidunge{
     font-size: 1.1em;
 }
-.noidung4 b, .noidung5 b{
+.noidungd b, .noidunge b{
     font-size: 1.2em;
     color: #2a8a15;
 }
 
-
+@media screen and (max-width:767px) {
+    .vechungtoi{
+        width: 100%;
+        flex-direction: row;
+    }
+    #noidung{
+        width: 100%;
+    }
+    .vechungtoi h1{
+        font-size: 2.2em;
+        margin-left: 20px;
+    }
+    .noidunga{
+        font-size: 1.8em;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .vechungtoi img{
+        margin-left: 20px;
+    }
+    .noidungb{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .noidungc{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .noidungd{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .noidunge{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    .vechungtoi{
+        width: 100%;
+        flex-direction: row;
+    }
+    .vechungtoi h1{
+        font-size: 2.2em;
+        margin-left: 20px;
+    }
+    .noidunga{
+        font-size: 1.8em;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .vechungtoi img{
+        margin-left: 20px;
+    }
+    .noidungb{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .noidungc{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .noidungd{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .noidunge{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
                        /* CSS CUA FOOTER */
 footer {
     font-family: sans-serif;

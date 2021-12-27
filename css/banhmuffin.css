@@ -308,6 +308,61 @@ div.menu10 ul{
     float: left;
     clear: both;
 }
+@media screen and (max-width:767px) {
+    .banhmuffin{
+        width: 100%;
+        text-align: center;
+        height: 350px;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .banh1{
+        margin-left: 30px;
+        margin-right: -80px;
+    }
+    .banh2{
+        margin-right: -80px;
+        margin-left: 160px;
+    }
+    .banh3{
+        clear: both;
+        margin-left: 30px;
+    }
+    .banh4{
+        margin-left: 20px;
+    }
+    .banh5{
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .banhmuffin{
+        width: 100%;
+        text-align: center;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .banh1{
+        margin-left: 20px;
+        margin-right: -80px;
+    }
+    .banh2{
+        margin-left: 75px;
+        margin-right: -80px;
+    }
+    .banh3{
+        margin-left: 75px;
+        margin-right: -80px;
+    }
+    .banh4{
+        margin-left: 75px;
+    }
+    .banh5{
+        margin-left: 20px;
+    }
+}
    /* CSS CUA FOOTER */
 footer {
     font-family: sans-serif;

@@ -45,10 +45,6 @@ header{
 a{
     text-decoration: none;
 }
-
-
-
-
 /*menu*/
 .menu3{
     display: flex;
@@ -297,6 +293,34 @@ div.menu10 ul{
 .banh1{
     float: left;
     margin-right: 80px;
+}
+@media screen and (max-width:767px) {
+    .banhcookie{
+        width: 100%;
+        text-align: center;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .banh1{
+       margin-left: 30px; 
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .banhcookie{
+        width: 100%;
+        text-align: center;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .banh1{
+        margin-left: 40px;
+        margin-right: -10px;
+    }
+    .banh2{
+        margin-left: 10px;
+    }
 }
        /* CSS CUA FOOTER */
 footer {

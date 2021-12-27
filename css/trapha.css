@@ -328,7 +328,99 @@ div.menu10 ul{
 .tra10{
     float: left;
 }
-
+@media screen and (max-width:767px) {
+    .trapha{
+        width: 100%;
+        text-align: center;
+        height: 450px;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .tra1{
+        margin-left: 30px;
+        margin-right: -10px;
+    }
+    .tra2{
+        margin-left: 95px;
+        margin-right: -10px;
+    }
+    .tra3{
+        margin-left: 30px;
+        margin-right: -10px;
+    }
+    .tra4{
+        margin-left: 95px;
+    }
+    .tra5{
+        margin-left: 30px;
+    }
+    .tra6{
+        margin-left: 16px;
+        margin-right: -10px;
+    }
+    .tra7{
+        clear: both;
+        margin-left: 30px;
+        margin-right: -10px;
+    }
+    .tra8{
+        margin-left: 95px;
+    }
+    .tra9{
+        margin-left: 30px;
+    }
+    .tra10{
+        margin-left: 45px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .trapha{
+        width: 100%;
+        text-align: center;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .tra1{
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .tra2{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .tra3{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .tra4{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .tra5{
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .tra6{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .tra7{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .tra8{
+        margin-left: 5px;
+    }
+    .tra9{
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .tra10{
+        margin-left: 5px;
+    }
+}
                         /* CSS CUA FOOTER */
 footer {
     font-family: sans-serif;

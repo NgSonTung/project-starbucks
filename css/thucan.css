@@ -365,6 +365,73 @@ h5{
     margin-top: -10px;
     display: block;
 }
+
+@media screen and (max-width:767px) {
+    #thucan{
+        width: 100%;
+        flex-direction: row;
+    }
+    #noidung-a{
+        width: 100%;
+    }
+    .h2{
+        font-size: 2em;
+        margin-left: 20px;
+    }
+    #thucan img{
+        width: 90%;
+        margin-left: 20px;
+    }
+    #thucan h6{
+        font-size: 1.6em;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #thucan h5{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .a1{
+        font-size: 1.2em;
+        width: 50%;
+        margin-left: -20px;
+    }
+    .a2{
+        font-size: 1.2em;
+        width: 50%;
+        margin-left: -10px;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1024px) {
+    #thucan{
+        width: 100%;
+        flex-direction: row;
+    }
+    #noidung-a{
+        width: 100%;
+    }
+    .h2{
+        margin-left: 20px;
+    }
+    #thucan img{
+        margin-left: 20px;
+    }
+    #thucan h6{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #thucan h5{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .a1{
+        margin-left: -20px;
+    }
+    .a2{
+        margin-left: -10px;
+        margin-right: 20px;
+    }
+}
        /* CSS CUA FOOTER */
 footer {
     font-family: sans-serif;

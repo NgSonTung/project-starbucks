@@ -45,10 +45,6 @@ header{
 a{
     text-decoration: none;
 }
-
-
-
-
 /*menu*/
 .menu3{
     display: flex;
@@ -322,6 +318,75 @@ div.menu10 ul{
 }
 .doantuoi h3{
     color: #2a8a15;
+}
+@media screen and (max-width:767px) {
+    .thucdon{
+        width: 100%;
+        flex-direction: row;
+    }
+    #noidung-a{
+        width: 100%;
+    }
+    .thucdon h1{
+        font-size: 2em;
+        margin-left: 20px;
+    }
+    .doan{
+        font-size: 1.8em;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .thucdon img{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .doan2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .douong h2{
+        font-size: 1.8em;
+    }
+    .douong{
+        font-size: 1em;
+        margin-left: 20px;
+    }
+    .doantuoi h2{
+        font-size: 1.8em;
+    }
+    .doantuoi{
+        font-size: 1em;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .thucdon{
+        width: 100%;
+        flex-direction: row;
+    }
+    #noidung-a{
+        width: 100%;
+    }
+    .doan{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .thucdon h1{
+        margin-left: 20px;
+    }
+    .thucdon img{
+        margin-left: 20px;
+    }
+    .doan2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .douong{
+        margin-left: 20px;
+    }
+    .doantuoi{
+        margin-right: 20px;
+    }
 }
                         /* CSS CUA FOOTER */
 footer {

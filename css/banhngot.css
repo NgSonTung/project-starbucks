@@ -312,6 +312,67 @@ div.menu10 ul{
 .banh6{
     float: left;
 }
+@media screen and (max-width:767px) {
+    #banhngot{
+        width: 100%;
+        text-align: center;
+        height: 400px;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .banh1{
+        margin-left: 30px;
+    }
+    .banh2{
+        margin-right: -10px;
+        margin-left: 5px;
+    }
+    .banh3{
+        margin-left: 30px;
+    }
+    .banh4{
+        margin-left: 50px;
+    }
+    .banh5{
+        margin-left: 30px;
+        margin-right: -5px;
+    }
+    .banh6{
+        margin-left: 85px;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1024px) {
+    #banhngot{
+        width: 100%;
+        text-align: center;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .banh1{
+        margin-left: 20px;
+        margin-right: -50px;
+    }
+    .banh2{
+        margin-left: 50px;
+        margin-right: -50px;
+    }
+    .banh3{
+        margin-left: 50px;
+        margin-right: -50px;
+    }
+    .banh4{
+        margin-left: 50px;
+    }
+    .banh5{
+        margin-left: 20px;
+        margin-right: -50px
+    }
+    .banh6{
+        margin-left: 50px;
+    }
+}
       /* CSS CUA FOOTER */
 footer {
     font-family: sans-serif;

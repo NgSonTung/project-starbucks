@@ -309,6 +309,59 @@ div.menu10 ul{
     float: left;
     clear: both;
 }
+@media screen and (max-width:767px) {
+    .kemtron{
+        width: 100%;
+        text-align: center;
+        height: 400px;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .nuoc1{
+        margin-left: 30px;
+    }
+    .nuoc2{
+        margin-left: 10px;
+    }
+    .nuoc3{
+        clear: both;
+        margin-left: 30px;
+    }
+    .nuoc4{
+        margin-left: 20px;
+    }
+    .nuoc5{
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .kemtron{
+        width: 100%;
+        text-align: center;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .nuoc1{
+        margin-left: 20px;
+        margin-right: -50px;
+    }
+    .nuoc2{
+        margin-left: 50px;
+        margin-right: -50px;
+    }
+    .nuoc3{
+        margin-left: 50px;
+        margin-right: -50px;
+    }
+    .nuoc4{
+        margin-left: 50px;
+    }
+    .nuoc5{
+        margin-left: 20px;
+    }
+}
 
       /* CSS CUA FOOTER */
 footer {

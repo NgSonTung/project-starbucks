@@ -365,7 +365,163 @@ div.menu10 ul{
 .nuoc19{
     float: left;
 }
-
+@media screen and (max-width:767px) {
+    .thucuongespresso{
+        width: 100%;
+        text-align: center;
+        height: 1450px;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .nuoc1{
+        margin-left: 30px;
+    }
+    .nuoc2{
+        margin-left: 10px;
+        margin-right: -50px;
+    }
+    .nuoc3{
+        margin-left: 30px;
+        margin-right: -10px;
+        clear: both;
+    }
+    .nuoc4{
+        margin-left: 95px;
+    }
+    .nuoc5{
+        margin-left: 30px;
+        clear: both;
+        margin-right: -50px;
+    }
+    .nuoc6{
+        margin-left: 135px;
+        margin-right: -10px;
+    }
+    .nuoc7{
+        margin-left: 30px;
+    }
+    .nuoc8{
+        margin-left: 35px;
+    }
+    .nuoc9{
+        margin-left: 30px;
+        margin-right: -10px;
+    }
+    .nuoc10{
+        margin-left: 95px;
+        margin-right: -10px;
+    }
+    .nuoc11{
+        margin-left: 30px;
+        margin-right: -10px;
+    }
+    .nuoc12{
+        margin-left: 95px;
+    }
+    .nuoc13{
+        margin-left: 30px;
+    }
+    .nuoc14{
+        margin-left: 5px;
+    }
+    .nuoc15{
+        margin-left: 30px;
+        margin-right: -10px;
+    }
+    .nuoc16{
+        margin-left: 95px;
+    }
+    .nuoc17{
+        margin-left: 30px;
+    }
+    .nuoc18{
+        margin-left: 23px;
+    }
+    .nuoc19{
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .thucuongespresso{
+        width: 100%;
+        text-align: center;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .nuoc1{
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .nuoc2{
+        margin-right: -10px;
+        margin-left: 5px;
+    }
+    .nuoc3{
+        margin-right: -10px;
+        margin-left: 10px;
+    }
+    .nuoc4{
+        margin-left: 5px;
+    }
+    .nuoc5{
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .nuoc6{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .nuoc7{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .nuoc8{
+        margin-left: 5px;
+    }
+    .nuoc9{
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .nuoc10{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .nuoc11{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .nuoc12{
+        margin-left: 5px;
+    }
+    .nuoc13{
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .nuoc14{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .nuoc15{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .nuoc16{
+        margin-left: 5px;
+    }
+    .nuoc17{
+        margin-left: 20px;
+        margin-right: -10px;
+    }
+    .nuoc18{
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    .nuoc19{
+        margin-left: 5px;
+    }
+}
                  /* CSS CUA FOOTER */
 footer {
     font-family: sans-serif;

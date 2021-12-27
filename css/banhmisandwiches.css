@@ -300,6 +300,43 @@ div.menu10 ul{
 .banh3{
     float: left;
 }
+@media screen and (max-width:767px) {
+    .banhmisandwiches{
+        width: 100%;
+        text-align: center;
+        height: 300px;
+    }
+    #banh-1{
+        width: 24%;
+    }
+    .banh1{
+        margin-left: 30px;
+        margin-right: -80px;
+    }
+    .banh2{
+        margin-left: 165px;
+        margin-right: -80px;
+    }
+    .banh3{
+        clear: both;
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .banhmisandwiches{
+        width: 100%;
+        text-align: center;
+    }
+    .banh1{
+        margin-left: 30px;
+    }
+    .banh2{
+        margin-right: -10px;
+    }
+    .banh3{
+        margin-left: 60px;
+    }
+}
                  /* CSS CUA FOOTER */
                  footer {
                     font-family: sans-serif;
