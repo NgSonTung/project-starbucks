@@ -12,38 +12,43 @@ body {
 }
 
 .card__header-top {
+    overflow: hidden;
     background-color: #333333;
-    height: 100px;
+    height: 110px;
 }
 
 .card__header-topleft {
+    width: 240px;
     float: left;
-    padding: 17px;
+    padding: 20px 0 20px 10px;
 }
 
 .card__header--menu {
+    position: absolute;
+    padding: 10px 0 20px 10px;
+    float: right;
     display: block;
     position: relative;
-    float: right;
 }
 
 .card__header--menu ul {
+    padding-inline-start: 10px;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin-top: 4%;
+    justify-content: space-between;
 }
 
 .card__header--menu ul li {
-    margin-left: 30px;
-    font-size: 95%;
+    margin-left: 20px;
+    font-size: 90%;
+    padding-bottom: 4px;
 }
 
 .card__header--menu ul li a:hover {
-    border-bottom: 1px solid white;
-}
-
-#card__FAQs--font {
-    text-transform: none;
+    transform: translateY(-3px);
+    border-bottom: 1px solid #ffffff;
 }
 
 #card__signinpage {
@@ -87,7 +92,7 @@ body {
 .card__benefit-top {
     display: inline-block;
     width: 100%;
-    height: 370px;
+    height: auto;
     background-image: linear-gradient(180deg, transparent, #000), url(../hinhanh/bg-index.f3bf60f3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,7 +101,8 @@ body {
 .card__rewarded {
     display: block;
     width: 48%;
-    margin: 5% auto;
+    margin: 5% auto 0;
+    padding-bottom: 20px;
 }
 
 .card__benefit-bottom {
@@ -132,7 +138,7 @@ body {
     border-radius: 15px;
     width: 428px;
     height: 240px;
-    margin: 0 auto;
+    margin: 20px auto 30px;
 }
 
 .card__gold--title {
@@ -333,6 +339,7 @@ body {
 
 footer {
     background-color: #f0f0f0;
+    height: auto;
 }
 
 .card__footer--content {
@@ -433,28 +440,34 @@ footer {
 }
 
 .footer-bottom__nav {
-    display: block;
     margin: 13px 0;
     display: flex;
-}
-
-.footer-bottom__nav a {
-    padding: 0 10px;
-    font-size: 15px;
-    font-size: 85%;
-}
-
-.footer-bottom__links--daudoan {
+    flex-wrap: wrap;
     margin-left: -10px;
 }
 
-.footer-bottom__links2-5 a {
+.footer-bottom__nav a {
+    display: block;
     padding: 0 10px;
-    border-left: 1px solid #b3b3b3;
+    font-size: 15px;
+    font-size: 85%;
+    padding: 0 6px;
+    border-right: 1px solid #b3b3b3;
+}
+
+.footer-bottom__links--cuoidoan {
+    border: none!important;
 }
 
 .footer__copyright {
+    margin: 0;
+    float: left;
     font-size: 11px;
+}
+
+.footer-bottom__copyrights>img {
+    width: 120px;
+    float: right;
 }
 
 .arrow {
@@ -485,6 +498,8 @@ hr {
 }
 
 #card__samples {
+    overflow: hidden;
+    width: 100%;
     display: inline-block;
     height: auto;
     padding: 0;
@@ -525,13 +540,6 @@ input {
 }
 
 .card__container {
-    /* position: relative;
-    width: 1000px;
-    padding: auto;
-    margin: auto;
-    display: block;
-    background-color: #fff;
-    box-shadow: 0 0.5px 3px rgb(190, 190, 190); */
     width: 852.5px;
     background-color: white;
     overflow: auto;
@@ -612,20 +620,17 @@ input:checked~.card__container {
     height: 1000px;
 }
 
-/* gộp 2 cái kia dc k */
-
 .card__samples-container {
     margin: auto;
-    /* overflow: hidden; */
-    height: 650px;
-    width: 2000px;
+    height: 600px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #left-arrow {
     margin: 0;
-    border-color: #ffffff;
+    border-color: rgb(167, 160, 160);
     padding: 15px;
     transform: rotate(135deg);
 }
@@ -643,13 +648,16 @@ input:checked~.card__container {
     color: white;
     text-align: center;
 }
-.card__samples-main{
+
+.card__samples-main {
     margin-top: 100px;
     user-select: none;
 }
-.sliderwrapper{
+
+.sliderwrapper {
     overflow: hidden;
 }
+
 .card__samples-slides {
     height: auto;
     width: 100%;
@@ -657,44 +665,198 @@ input:checked~.card__container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: left;
+    transform: translateX(0px);
     transition: transform .4s ease-in-out;
 }
-.slideritem{
-    flex: 1 0 30%;
+
+.slideritem {
+    flex: 1 0 27%;
     height: 100%;
     width: 100%;
 }
-.card__samples-slides > div {
+
+.card__samples-slides>div {
     height: 100%;
     display: block;
     color: white;
     text-align: center;
-    margin: 20px;
+    margin: 20px 2vw;
 }
-.card__samples-slides > img {
+
+.card__samples-slides>img {
     height: 100%;
 }
 
 .left {
+    display: block;
     margin: auto 0 auto 200px;
-    /* padding-top: 200px; */
-    /* float: left; */
 }
-
 
 .right {
+    display: block;
     margin: auto 200px auto 0;
-    /* padding-top: 200px; */
-    /* float: right; */
 }
 
-.card__samples-container input:checked{}
+.menu--open {
+    display: none;
+}
+
+.menu--open li {
+    width: 200px;
+    margin-bottom: -10px;
+}
+
+.menu--checkbox {
+    display: none
+}
+
+.menu--checkbox:checked+label>.bar1 {
+    transform: rotate(45deg) translate(7px, 6px);
+}
+
+.menu--checkbox:checked+label>.bar2 {
+    opacity: 0;
+}
+
+.menu--checkbox:checked+label>.bar3 {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu--checkbox:checked+label+.hidden--menu {
+    width: 240px;
+}
+
+.hidden__card__header--menu ul {
+    margin-left: -30px;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+}
+
+.hidden__items {
+    margin: 20px 0 10px 10px;
+    text-transform: uppercase;
+}
+
+.hidden__items>a {
+    color: white;
+    text-decoration: none;
+}
+
+.hidden__items>.card__signinpage {
+    margin-left: 10px;
+}
+
+.hidden--menu {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: .3s;
+    position: fixed;
+    float: left;
+    background-color: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(20px);
+    width: 0;
+    height: 100%;
+}
+
+.hidden--chu_a>#hidden--card__header--starbucksreward {
+    display: none;
+    width: 200px;
+    margin-left: 40px;
+}
+
+.hidden--chu_a {
+    margin: 26px 6px 10px 10px;
+    display: flex;
+}
+
+#hidden__menu-button {
+    color: rgb(167, 160, 160);
+    cursor: pointer;
+    display: block;
+}
+
+
+/* header res */
+
+@media only screen and (max-width: 840px) {
+    .slideritem {
+        flex: 1 0 95%!important;
+    }
+}
+
+@media only screen and (max-width: 1188px) {
+    .slideritem {
+        flex: 1 0 29%;
+    }
+    .card__samples-main {
+        width: 80%;
+    }
+    .left {
+        margin-left: 0 !important;
+    }
+    .right {
+        margin-right: 0 !important;
+    }
+    .card__rewarded {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .card__apps--left-image {
+        padding: auto 3vw;
+    }
+    .card__container {
+        width: 95%;
+    }
+    .hidden--menu {
+        display: block;
+    }
+    .menu--open {
+        position: absolute;
+        /* float: left; */
+        margin: 6px 100px auto auto;
+        color: rgb(167, 160, 160);
+        cursor: pointer;
+        display: block;
+    }
+    .card__header-top {
+        display: block;
+    }
+    .chu_a {
+        overflow: hidden;
+        /* margin-top: -30px; */
+        display: flex;
+        width: 95%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 31px;
+        height: 3px;
+        background-color: rgb(196, 196, 196);
+        margin: 6px 0;
+        transition: 0.2s;
+    }
+    .card__header--menu {
+        display: none;
+    }
+    .card__header--starbucksreward {
+        display: block;
+        transition: transform .2s;
+    }
+}
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -704,7 +866,6 @@ input:checked~.card__container {
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }
@@ -714,11 +875,9 @@ input:checked~.card__container {
     0% {
         transform: rotate(45deg)
     }
-
     50% {
         transform: rotate(-45deg)
     }
-
     100% {
         transform: rotate(-135deg)
     }
@@ -728,12 +887,54 @@ input:checked~.card__container {
     0% {
         transform: rotate(-135deg)
     }
-
     50% {
         transform: rotate(-45deg)
     }
-
     100% {
         transform: rotate(45deg)
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #f__one,
+    #f__two,
+    #f__three {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .card__apps--top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__apps--left {
+        width: 98%;
+    }
+    .card__apps--right {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 97%;
+    }
+    .card__app-download {
+        margin: 0 auto;
+    }
+    #f__one,
+    #f__two,
+    #f__three {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .footer__copyright {
+        width: 100%;
+    }
+    .footer-bottom__copyrights img {
+        margin: 0;
+        float: left;
     }
 }

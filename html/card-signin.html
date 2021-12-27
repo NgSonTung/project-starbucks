@@ -2,30 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/3c4540d338.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/card-signin.css">
-    <link rel="stylesheet" href="card.html">
+    <script src="../js/menu.js"></script>
+    <link rel="stylesheet" href="../css/card-signin.css" />
+    <link rel="stylesheet" href="card.html" />
     <title>Starbucks Vietnam</title>
 </head>
 
 <body>
-    <header>
+    <header id="this-is-header">
         <div class="card__header-top">
             <div class="card__header-topleft">
-                <a href="card.html" class="card__header--starbucksreward"><img src="../hinhanh/tải xuống.png" alt=""></a>
+                <div class="chu_a">
+                    <a href="card.html" class="card__header--starbucksreward"><img src="../hinhanh/tải xuống.png" alt="" /></a>
+                </div>
+                <div class="menu--open" onclick="openMenu()" id="menu-button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
             <div class="card__header-topright">
                 <nav class="card__header--menu">
                     <ul>
-                        <li class="top__right__items"><a href="">starbucks e-gift</a></li>
-                        <li class="top__right__items"><a href="#card__benefit">quyền lợi</a></li>
-                        <li class="top__right__items"><a href="#card__apps">ứng dụng điện thoại</a></li>
-                        <li class="top__right__items"><a href="">các mẫu thẻ</a></li>
-                        <li class="top__right__items"><a href="" id="card__FAQs--font">FAQs</a></li>
-                        <li><a href="card-signin.html" id="card__signinpage">Đăng nhập / Đăng ký</a></li>
+                        <li class="top__right__items" id="card__e-gift">
+                            <a href="card-Egift.html">starbucks e-gift</a>
+                        </li>
+                        <li class="top__right__items" id="card__benefit">
+                            <a href="card.html#card__benefit">quyền lợi</a>
+                        </li>
+                        <li class="top__right__items" id="card__apps">
+                            <a href="card.html#card__apps">ứng dụng điện thoại</a>
+                        </li>
+                        <li class="top__right__items" id="card__cards">
+                            <a href="card.html#card__samples">các mẫu thẻ</a>
+                        </li>
+                        <li class="top__right__items" id="card__FAQs--font">
+                            <a href="card.html#card__FAQs">FAQs</a>
+                        </li>
+                        <li>
+                            <a id="card__signinpage" onClick="history.go(0);">
+                    Đăng nhập / Đăng ký
+                </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -34,127 +57,188 @@
 
     <div id="card-signin__layout">
         <div id="card-signin__top">
-            <img src="../hinhanh/banner.aee2b645.png" alt="" class="card-signin__banner">
+            <img src="../hinhanh/banner.aee2b645.png" alt="" class="card-signin__banner" />
         </div>
 
-
-        <div id="card-signin__left">
-            <div class="card-signin__left--content">
-                <h1>Đăng nhập</h1>
-                <form action="">
-                    <div class="card-signinbox">
-                        <input type="email" id="email" name="Email" placeholder=" ">
-                        <label for="email">Địa chỉ email</label>
-                    </div>
-                    <div class="card-signinbox">
-                        <input type="password" id="password" name="Password" placeholder=" ">
-                        <label for="password">Mật khẩu</label>
-                    </div>
-                    <div class="card-signin--saveinfo">
-                        <label for="card-signin--Checkbox"><input type="checkbox" name="Checkbox" id="card-signin--Checkbox">Lưu thông tin đăng nhập</label>
-                    </div>
-                    <div class="card-signin--change">
-                        <p>Quên <a href="">mật khẩu</a> or
-                            <a href="">email</a>.
-                        </p>
-                    </div>
-                    <div class="card-signin--button">
-                        <input type="submit" value="Đăng nhập" name="Đăng nhập">
-                    </div>
-                </form>
-            </div>
+        <div class="left-right">
+            <div id="card-signin__left">
+                <div class="card-signin__left--content">
+                    <h1>Đăng nhập</h1>
+                    <form action="">
+                        <div class="card-signinbox">
+                            <input type="email" id="email" name="Email" placeholder=" " />
+                            <label for="email">Địa chỉ email</label>
+                        </div>
+                        <div class="card-signinbox">
+                            <input type="password" id="password" name="Password" placeholder=" " />
+                            <label for="password">Mật khẩu</label>
+                        </div>
+                        <div class="card-signin--saveinfo">
+                            <label for="card-signin--Checkbox"><input
+                    type="checkbox"
+                    name="Checkbox"
+                    id="card-signin--Checkbox"
+                  />Lưu thông tin đăng nhập</label
+                >
+              </div>
+              <div class="card-signin--change">
+                <p>Quên <a href="">mật khẩu</a> or <a href="">email</a>.</p>
+              </div>
+              <div class="card-signin--button">
+                <input type="submit" value="Đăng nhập" name="Đăng nhập" />
+              </div>
+            </form>
+          </div>
         </div>
-
 
         <div id="card-signin__right">
-            <div class="card-signin__right-content">
-                <p class="card-signin__right--title">Chưa là thành viên?</p>
-                <p class="card-signin__right--subtitle">tham gia starbucksrewards<span>TM</span></p>
-                <p class="card-signin__right--texts">
-                    Khi bạn đăng ký thành công thẻ Starbucks, bạn đã là thành viên của chương trình Starbucks Rewards<span>TM</span>
-                </p>
-                <p class="card-signin__right--texts">
-                    Thanh toán bằng thẻ Starbucks Rewards khi thực hiện bất kỳ giao dịch tại cửa hàng Starbucks để tích lũy điểm ngôi sao.
-                </p>
-                <p class="card-signin__right--texts">
-                    Bạn sẽ được một ngôi sao điểm thưởng với mỗi chi tiêu VND 40,000.
-                </p>
-                <p class="card-signin__right--texts">
-                    Tích lũy 100 ngôi sao điểm thưởng trong một năm để được nâng lên hạng thẻ Vàng.
-                </p>
-                <div class="card-signin__right--rewards">
-                    <div class="card-signin--1streward">
-                        <img src="../hinhanh/pay.11871124.svg" alt="">
-                        <p>Thanh toán với ứng dụng</p>
-                    </div>
-                    <div class="card-signin--2ndreward">
-                        <img src="../hinhanh/earn.ef4f7ff5.svg" alt="">
-                        <p>Bánh và nước miễn phí</p>
-                    </div>
-                    <div class="card-signin--3rdreward">
-                        <img src="../hinhanh/offer.47c8a528.svg" alt="">
-                        <p>Ưu đãi đặc biệt</p>
-                    </div>
-                </div>
-                <div class="card-signuppage">
-                    <a href="#" id="card__signuppage">Đăng ký</a>
-                </div>
+          <div class="card-signin__right-content">
+            <p class="card-signin__right--title">Chưa là thành viên?</p>
+            <p class="card-signin__right--subtitle">
+              tham gia starbucksrewards<span>TM</span>
+            </p>
+            <p class="card-signin__right--texts">
+              Khi bạn đăng ký thành công thẻ Starbucks, bạn đã là thành viên của
+              chương trình Starbucks Rewards<span>TM</span>
+            </p>
+            <p class="card-signin__right--texts">
+              Thanh toán bằng thẻ Starbucks Rewards khi thực hiện bất kỳ giao
+              dịch tại cửa hàng Starbucks để tích lũy điểm ngôi sao.
+            </p>
+            <p class="card-signin__right--texts">
+              Bạn sẽ được một ngôi sao điểm thưởng với mỗi chi tiêu VND 40,000.
+            </p>
+            <p class="card-signin__right--texts">
+              Tích lũy 100 ngôi sao điểm thưởng trong một năm để được nâng lên
+              hạng thẻ Vàng.
+            </p>
+            <div class="card-signin__right--rewards">
+              <div class="card-signin--1streward">
+                <img src="../hinhanh/pay.11871124.svg" alt="" />
+                <p>Thanh toán với ứng dụng</p>
+              </div>
+              <div class="card-signin--2ndreward">
+                <img src="../hinhanh/earn.ef4f7ff5.svg" alt="" />
+                <p>Bánh và nước miễn phí</p>
+              </div>
+              <div class="card-signin--3rdreward">
+                <img src="../hinhanh/offer.47c8a528.svg" alt="" />
+                <p>Ưu đãi đặc biệt</p>
+              </div>
             </div>
+            <div class="card-signuppage">
+              <a href="#" id="card__signuppage">Đăng ký</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <footer>
-        <div class="card__footer--content">
-            <div class="card__footer-top">
-                <div class="card__footer-top--col">
-                    <ul class="card__footer-top--colbox">
-                        <li class="card__footer-top--title"><a href="">về chúng tôi</a></li>
-                        <li><a href="">Di sản</a></li>
-                        <li><a href="">Công ty</a></li>
-                        <li><a href="">Cơ hội nghề nghiệp</a></li>
-                    </ul>
-                </div>
-                <div class="card__footer-top--col">
-                    <ul class="card__footer-top--colbox">
-                        <li class="card__footer-top--title"><a href="">dịch vụ khách hàng</a></li>
-                        <li><a href="">Câu hỏi Thường gặp</a></li>
-                    </ul>
-                </div>
-                <div class="card__footer-top--col">
-                    <ul class="card__footer-top--colbox">
-                        <li class="card__footer-top--title"><a href="">liên hệ nhanh</a></li>
-                        <li><a href="">Bộ định vị Cửa hàng</a></li>
-                        <li><a href="">Dành cho Đối tác</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card__footer-bot">
-                <div class="footer-bottom__language">
-                    <a href="starbucks.html"><img src="../hinhanh/2560px-Flag_of_Vietnam.svg.png" alt="Flag" class="VN"></a>
-                    <p class="footer-bottom__language--left"><b>Thay đổi ngôn ngữ >></b></p>
-                    <a href="starbucks.html" class="footer-bottom__language--eng"><b>English</b></a>
-                    <p class="footer-bottom__language--right"><b>>></b></p>
-                    <p class="footer-bottom__language--vn">Tiếng Việt (VN)</p>
-                </div>
-
-                <div class="footer-bottom__links">
-                    <nav class="footer-bottom__nav">
-                        <a href="" class="footer-bottom__links--daudoan">Khả năng truy cập Web</a>
-                        <div class="footer-bottom__links2-5">
-                            <a href="">Chính Sách Bảo Mật Thông Tin</a>
-                            <a href="">Điều Khoản Sử Dụng</a>
-                            <a href="">Sơ Đồ Trang Web</a>
-                            <a href="">Tùy Chọn Cookie</a>
-                        </div>
-                    </nav>
-                </div>
-
-                <div class="footer-bottom__copyrights">
-                    <p class="footer__copyright">© 2019 Starbucks Coffee Company. Mọi quyền được bảo lưu.</p>
-                </div>
-            </div>
+    <footer id="this-is-footer">
+      <div class="card__footer--content">
+        <div class="card__footer-top">
+          <div class="card__footer-top--col" id="f__one">
+            <ul class="card__footer-top--colbox">
+              <li class="card__footer-top--title">
+                <a href="vechungtoi.html">về chúng tôi</a>
+              </li>
+              <li><a href="">Di sản</a></li>
+              <li><a href="">Công ty</a></li>
+              <li><a href="">Cơ hội nghề nghiệp</a></li>
+            </ul>
+          </div>
+          <div class="card__footer-top--col" id="f__two">
+            <ul class="card__footer-top--colbox">
+              <li class="card__footer-top--title">
+                <a href="">dịch vụ khách hàng</a>
+              </li>
+              <li><a href="">Câu hỏi Thường gặp</a></li>
+            </ul>
+          </div>
+          <div class="card__footer-top--col" id="f__three">
+            <ul class="card__footer-top--colbox">
+              <li class="card__footer-top--title">
+                <a href="">liên kết nhanh</a>
+              </li>
+              <li><a href="">Bộ định vị Cửa hàng</a></li>
+              <li><a href="">Dành cho Đối tác</a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
-</body>
+        <div class="card__footer-bot">
+          <div class="footer-bottom__language">
+            <a href="starbucks.html"
+              ><img
+                src="../hinhanh/2560px-Flag_of_Vietnam.svg.png"
+                alt="Flag"
+                class="VN"
+            /></a>
+            <p class="footer-bottom__language--left">
+              <b>Thay đổi ngôn ngữ >></b>
+            </p>
+            <a href="starbucks.html" class="footer-bottom__language--eng"
+              ><b>English</b></a
+            >
+            <p class="footer-bottom__language--right"><b>>></b></p>
+            <p class="footer-bottom__language--vn">Tiếng Việt (VN)</p>
+          </div>
 
+          <div class="footer-bottom__links">
+            <nav class="footer-bottom__nav">
+              <a href=""
+                >Khả năng truy cập Web</a
+              >
+              <a href="">Chính Sách Bảo Mật Thông Tin</a>
+              <a href="">Điều Khoản Sử Dụng</a>
+              <a href="">Sơ Đồ Trang Web</a>
+              <a href="" class="footer-bottom__links--cuoidoan">Tùy Chọn Cookie</a>
+            </nav>
+          </div>
+
+          <div class="footer-bottom__copyrights">
+            <p class="footer__copyright">
+              © 2019 Starbucks Coffee Company. Mọi quyền được bảo lưu.
+            </p>
+            <img src="../hinhanh/sb-text-logo.84eb6879.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="hidden--menu" id="hidden--menu">
+    <div class="hidden--chu_a">
+        <div class="hidden--menu--open" onclick="closeMenu()" id="hidden__menu-button">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="card.html" id="hidden--card__header--starbucksreward"
+            ><img src="../hinhanh/tải xuống.png" alt=""
+        /></a>
+    </div>
+      <nav class="hidden__card__header--menu">
+        <ul id="hidden--card__header--menu">
+          <li class="hidden__items" id="card__e-gift">
+            <a href="card-Egift.html">starbucks e-gift</a>
+          </li>
+          <li class="hidden__items" id="card__benefit">
+            <a href="card.html#card__benefit">quyền lợi</a>
+          </li>
+          <li class="hidden__items" id="card__apps">
+            <a href="card.html#card__apps">ứng dụng điện thoại</a>
+          </li>
+          <li class="hidden__items" id="card__cards">
+            <a href="card.html#card__samples">các mẫu thẻ</a>
+          </li>
+          <li class="hidden__items" id="card__FAQs--font">
+            <a href="card.html#card__FAQs">FAQs</a>
+          </li>
+          <li class="hidden__items">
+            <a id="card__signinpage" onClick="history.go(0);">
+                Đăng nhập / Đăng ký
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
 </html>
