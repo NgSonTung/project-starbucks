@@ -1,0 +1,238 @@
+/* CSS CUA FOOTER */
+
+footer {
+    font-family: sans-serif;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.footer-top__icon {
+    margin: 0 6.66%;
+    height: 110px;
+    display: flex;
+    position: relative;
+    /* right: 680px; */
+}
+
+.footer-top__icon-link {
+    margin: auto 20%;
+}
+
+.footer__facebook {
+    font-size: 30px;
+}
+
+.footer__instagram {
+    font-size: 30px;
+}
+
+.footer-mid {
+    background-color: #f7f7f7;
+    border-top: 3px solid #fff;
+    width: 100%;
+}
+
+.footer-mid__grid {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.footer-mid__grid--row {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    background-image: url(https://www.starbucks.vn/media/wordmark_footer_tcm90-397.png);
+    background-size: 18.4px;
+    background-repeat: no-repeat;
+    background-position: 98.5% 0;
+    margin-top: 40px;
+}
+
+.footer-mid__grid--col1-3 {
+    margin-right: 8%;
+    width: auto;
+    white-space: normal;
+}
+
+.footer-mid__list {
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-mid__grid--col1-3 h3 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+footer a:hover {
+    color: #b3b3b3da;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-bottom: 3%;
+}
+
+.footer-bottom__language {
+    display: flex;
+}
+
+.VN {
+    height: 10px;
+}
+
+.footer-bottom__language--left {
+    font-size: 10px;
+    margin: 5px 15px;
+}
+
+.footer-bottom__language--vn {
+    padding: 0 20px;
+    margin: 0;
+    border-left: 1px solid #b3b3b3;
+}
+
+.footer-bottom__language--eng {
+    font-size: 90%;
+    margin: 2px 0;
+}
+
+.footer-bottom__language--right {
+    margin: 5px 10px;
+    font-size: 10px;
+}
+
+.footer-bottom__nav {
+    display: block;
+    margin: 28px 0;
+    display: flex;
+}
+
+.footer-bottom__nav a {
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.footer-bottom__links--daudoan {
+    margin: 0 2% 0 -1%;
+    border-left: none!important;
+}
+
+.footer-bottom__links2-5 a {
+    padding: 0 10px;
+    border-left: 1px solid #b3b3b3;
+}
+
+.footer__copyright {
+    font-size: 11px;
+}
+
+
+/* hidden footer */
+
+.footer-mid__grid--hidden {
+    width: 100%;
+    display: none;
+}
+
+.footer-mid__grid--hidden input {
+    display: none;
+}
+
+.footer-mid__grid--object {
+    overflow-y: hidden;
+    height: auto;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #80808080;
+}
+
+.footer-mid__grid--object h3 {
+    font-size: 95%;
+    text-transform: uppercase;
+}
+
+.footer-mid__grid--object a {
+    padding: 5px 20px;
+    float: left;
+    display: block;
+    width: auto;
+}
+
+.footer-mid__grid--object ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-mid__grid--object ul li {
+    margin: 0;
+}
+
+.arrow {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    padding: 1px;
+    margin-top: 14px;
+    margin-right: 30px;
+    transform: rotate(45deg);
+    transition: transform .2s;
+    -webkit-transform: rotate(45deg);
+    width: 4px;
+    height: 4px;
+    float: right;
+}
+
+
+/* KET THUC CSS FOOTER */
+
+
+/* res */
+
+@media only screen and (max-width: 767px) {
+    .footer-top__icon {
+        margin-left: -5%;
+    }
+    .footer-mid__grid {
+        max-width: 100%;
+    }
+    .footer-mid__grid--row {
+        display: none;
+    }
+    .footer-mid__grid--hidden {
+        display: block;
+    }
+}
+
+
+/* animation */
+
+.footer-mid__grid--hidden input:checked+label {
+    transform: rotate(-135deg);
+}
+
+.footer-mid__grid--hidden input:checked+label+ul {
+    display: flex;
+}

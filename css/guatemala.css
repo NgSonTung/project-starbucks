@@ -1,127 +1,145 @@
 /* CSS CUA MENU/HEADER */
-body{
+
+body {
     margin: 0;
     background-color: white;
     font-family: sans-serif;
 }
-header{
+
+header {
     background-color: #f7f7f7;
     height: 100%;
     z-index: 10;
     position: relative;
     transition: margin-bottom 0.3s ease-in-out;
 }
-.menu1{
+
+.menu1 {
     height: 10px;
-    background-color: rgba(0,99,65,1);
+    background-color: rgba(0, 99, 65, 1);
 }
-.menu2{
+
+.menu2 {
     margin-top: 12px;
     padding: 0 20px;
-    
 }
-.menu37{
+
+.menu37 {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 10px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
-.menu34{
+
+.menu34 {
     margin-top: 15px;
     font-family: sans-serif;
     font-size: 14px;
     color: rgb(70, 70, 70);
     display: flex;
 }
-.menu35{
+
+.menu35 {
     padding: 0 8px;
-    color: rgba(0,99,65,1) ;
+    color: rgba(0, 99, 65, 1);
 }
-.menu34:hover{
+
+.menu34:hover {
     color: rgba(70, 70, 70, 0.699);
 }
-.menu34:hover .menu35{
-    color: rgba(0, 99, 64, 0.795) ;
+
+.menu34:hover .menu35 {
+    color: rgba(0, 99, 64, 0.795);
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 
-
-
 /*menu*/
-.menu3{
+
+.menu3 {
     display: flex;
     flex-wrap: wrap;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.menu7{
+
+.menu7 {
     margin-top: 46px;
     width: fit-content;
 }
-.menu5{
+
+.menu5 {
     color: black;
     margin-left: -40px;
-    padding: 16px 14px ;
+    padding: 16px 14px;
     word-spacing: 3px;
     letter-spacing: 2px;
     font-size: 14px;
-
 }
-.menu31{
+
+.menu31 {
     color: black;
     margin-left: -42px;
-    padding: 16px 14px ;
+    padding: 16px 14px;
     word-spacing: 3px;
     letter-spacing: 2px;
     font-size: 14px;
 }
-.menu5:hover{
+
+.menu5:hover {
     background-color: #1D1D1D;
     color: white;
 }
-.menu31:hover{
+
+.menu31:hover {
     background-color: black;
     color: white;
 }
 
 
-
 /*dropdown*/
-.menu10{
+
+.menu10 {
     margin-top: 20px;
     display: flex;
     width: 100%;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
-.menu16{
+
+.menu16 {
     margin-top: -65px;
     display: flex;
     width: 100%;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
-.menu6{
+
+.menu6 {
     left: 0px;
     width: 100%;
     position: absolute;
     top: 106px;
     background-color: rgb(0, 0, 0);
-} 
-ul.menu9{
+}
+
+ul.menu9 {
     margin: auto;
     width: fit-content;
     overflow: hidden;
     height: 0;
     max-height: 0;
 }
-.menu4:hover .menu5{
+
+.menu4:hover .menu5 {
     background-color: #1D1D1D;
     color: white;
 }
-ul.menu4:hover ul.menu9{
-    height:auto;
+
+ul.menu4:hover ul.menu9 {
+    height: auto;
     max-height: 1000px;
     transition-property: max-height;
     transition-timing-function: ease-in-out;
@@ -129,41 +147,49 @@ ul.menu4:hover ul.menu9{
     transition-delay: 200ms;
 }
 
-.menu8{
+.menu8 {
     background-color: #1D1D1D;
 }
-.menu9{
+
+.menu9 {
     background-color: rgb(29, 29, 29);
 }
-.menu11{
+
+.menu11 {
     color: white;
     font-size: 13px;
     font-weight: bold;
     padding: 0 30px;
     white-space: nowrap;
 }
-.menu12{
+
+.menu12 {
     margin-left: -10px;
 }
-.menu12 a{
+
+.menu12 a {
     color: white;
     font-size: 13px;
     font-weight: 500;
 }
-.menu11 a{
+
+.menu11 a {
     color: white;
 }
-.menu19{
+
+.menu19 {
     padding: 05px 10px;
     color: white;
 }
-.menu20{
+
+.menu20 {
     margin-left: -70px;
     padding-top: 5px;
     padding-bottom: 30px;
     display: flex;
 }
-.menu18{
+
+.menu18 {
     width: 78%;
     border: none;
     height: 1px;
@@ -171,7 +197,8 @@ ul.menu4:hover ul.menu9{
     margin-top: 62px;
     margin-left: 10px;
 }
-.menu22{
+
+.menu22 {
     width: 78%;
     border: none;
     height: 1px;
@@ -179,7 +206,8 @@ ul.menu4:hover ul.menu9{
     margin-top: -20px;
     margin-left: 10px;
 }
-.menu24{
+
+.menu24 {
     width: 78%;
     border: none;
     height: 1px;
@@ -187,7 +215,8 @@ ul.menu4:hover ul.menu9{
     margin-top: -90px;
     margin-left: 10px;
 }
-.menu26{
+
+.menu26 {
     width: 78%;
     border: none;
     height: 1px;
@@ -195,7 +224,8 @@ ul.menu4:hover ul.menu9{
     margin-top: -80px;
     margin-left: 10px;
 }
-.menu28{
+
+.menu28 {
     width: 78%;
     border: none;
     height: 1px;
@@ -203,7 +233,8 @@ ul.menu4:hover ul.menu9{
     margin-top: -100px;
     margin-left: 10px;
 }
-.menu30{
+
+.menu30 {
     width: 78%;
     border: none;
     height: 1px;
@@ -211,71 +242,83 @@ ul.menu4:hover ul.menu9{
     margin-top: -90px;
     margin-left: 10px;
 }
-.menu17{
+
+.menu17 {
     margin-left: -40px;
     font-weight: 500;
 }
-div.menu10 ul{
+
+div.menu10 ul {
     padding-right: 100px;
 }
-.menu13{
-    width: 130px;
 
+.menu13 {
+    width: 130px;
 }
-.menu21{
+
+.menu21 {
     margin-left: 543px;
     width: 145px;
 }
-.menu23{
+
+.menu23 {
     margin-left: 228px;
     width: 130px;
 }
-.menu25{
+
+.menu25 {
     margin-left: 553px;
     width: 127px;
 }
-.menu27{
+
+.menu27 {
     margin-left: 435px;
     width: 133px;
 }
-.menu29{
+
+.menu29 {
     margin-left: -14px;
     width: 140px;
 }
-.menu14{
+
+.menu14 {
     font-size: 15px;
-    margin-top: 4px ;
+    margin-top: 4px;
     white-space: normal;
     color: white;
 }
-.menu15{
+
+.menu15 {
     font-size: 14px;
     white-space: normal;
     color: white;
 }
-.menu32{
+
+.menu32 {
     margin-left: 10%;
 }
-.menu36{
+
+.menu36 {
     margin: 4px 6px;
     white-space: nowrap;
 }
-.menu9 ul li a:hover{
+
+.menu9 ul li a:hover {
     background: green;
 }
-.menu3bars{
+
+.menu3bars {
     display: none;
 }
-.menu12 a{
-    white-space:  nowrap;
+
+.menu12 a {
+    white-space: nowrap;
 }
 
 
+/* KET THUC CSS MENU */
 
-
-            /* KET THUC CSS MENU */
-
-.main{
+.main {
     background-image: url('../hinhanh/Coffee-Finder-Background_tcm90-3968.png');
     background-position: left top;
     background-size: auto 1200px;
@@ -283,7 +326,8 @@ div.menu10 ul{
     padding-top: 30px;
     height: 1350px;
 }
-.title{
+
+.title {
     font-family: "Crete Round", Georgia, "Times New Roman", serif;
     font-weight: 400;
     font-style: italic;
@@ -294,22 +338,26 @@ div.menu10 ul{
     margin-left: -53%;
     padding-bottom: 10px;
 }
-.bigcard{
+
+.bigcard {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: white;
     padding: 31px 20px;
 }
-.bigcard-img{
+
+.bigcard-img {
     max-height: 440px;
     overflow: hidden;
 }
-.bigcard-text{
+
+.bigcard-text {
     max-width: 630px;
     margin-left: 50px;
 }
-.bigcard-name{
+
+.bigcard-name {
     font-family: "Crete Round", Georgia, "Times New Roman", serif;
     font-style: italic;
     font-weight: 400;
@@ -317,7 +365,8 @@ div.menu10 ul{
     line-height: 28px;
     color: #3d3a35;
 }
-.bigcard-desc{
+
+.bigcard-desc {
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 24px;
@@ -326,11 +375,13 @@ div.menu10 ul{
     color: #777572;
     padding: 8px 0;
 }
-span{
+
+span {
     font-weight: 400;
     color: #3d3a35;
 }
-.p1{
+
+.p1 {
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 18px;
@@ -339,7 +390,8 @@ span{
     white-space: normal;
     padding: 5px 0;
 }
-.p2{
+
+.p2 {
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 18px;
@@ -348,7 +400,8 @@ span{
     white-space: normal;
     padding: 5px 0;
 }
-.p3{
+
+.p3 {
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 18px;
@@ -357,7 +410,8 @@ span{
     white-space: normal;
     padding: 5px 0;
 }
-.locate1{
+
+.locate1 {
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 24px;
@@ -367,7 +421,8 @@ span{
     word-spacing: 1px;
     margin-top: 70px;
 }
-.locate2{
+
+.locate2 {
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #3d3a35;
@@ -377,10 +432,12 @@ span{
     width: 250px;
     white-space: nowrap;
 }
-.locate2:hover{
-    background-color:rgb(184, 184, 184) ;
+
+.locate2:hover {
+    background-color: rgb(184, 184, 184);
 }
-.mid-desc{
+
+.mid-desc {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     line-height: 17px;
@@ -392,56 +449,64 @@ span{
     padding-top: 40px;
     padding-bottom: 20px;
 }
-.bottom-cards{
+
+.bottom-cards {
     display: flex;
     margin: auto;
     width: 1310px;
 }
-.bottom-cards1{
+
+.bottom-cards1 {
     background-color: white;
     padding: 32px;
 }
-.bottom-cards2{
+
+.bottom-cards2 {
     background-color: white;
     padding: 32px;
     margin-left: 100px;
 }
-.bottom-cards-img img{
+
+.bottom-cards-img img {
     height: 280px;
-    
 }
-.bottom-cards-p1{
+
+.bottom-cards-p1 {
     font-family: "Crete Round", Georgia, "Times New Roman", serif;
     font-weight: 500;
     line-height: 22px;
     color: #3d3a35;
     font-size: 20px;
 }
-.bottom-cards-p2{
+
+.bottom-cards-p2 {
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #777572;
 }
-.bottom-cards-p3{
+
+.bottom-cards-p3 {
     font-family: Lato, Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: #3d3a35;
-    
 }
-.bottom-cards-p3 p{
+
+.bottom-cards-p3 p {
     width: 120px;
 }
-.bottom-cards-p3 p:hover{
+
+.bottom-cards-p3 p:hover {
     background-color: rgb(184, 184, 184);
 }
-.return{
-    margin: 3% 15.5% ;
 
+.return {
+    margin: 3% 15.5%;
 }
-.return p{
+
+.return p {
     color: #3d3a35;
     width: 135px;
     font-family: Lato, Helvetica, Arial, sans-serif;
@@ -449,255 +514,107 @@ span{
     font-size: 14px;
     border-bottom: dotted black 1px;
 }
-.return p:hover{
+
+.return p:hover {
     background-color: rgb(184, 184, 184);
-}     
-
-
-
-
-          /* CSS CUA FOOTER */
-footer {
-    font-family: sans-serif;
-    margin: 0 auto;
 }
 
-.footer-top {
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-}
 
-.footer-top__icon {
-    margin: auto 0px;
-    height: 110px;
-    width: 100px;
-    display: flex;
-    position: relative;
-    right: 680px;
-}
+/* responsive mobile */
 
-.footer-top__icon-link {
-    margin: auto 20%;
-    
-}
-
-.footer__facebook {
-    font-size: 30px;
-
-}
-
-.footer__instagram {
-    font-size: 30px;
-}
-
-.footer-mid {
-    background-color: #f7f7f7;
-    border-top: 3px solid #fff;
-}
-
-.footer-mid__grid {
-    width: 1400px;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.footer-mid__grid--row {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-    background-image: url(https://www.starbucks.vn/media/wordmark_footer_tcm90-397.png);
-    background-size: 18.4px;
-    background-repeat: no-repeat;
-    background-position: 98.5% 0;
-    margin-top: 40px;
-}
-
-.footer-mid__grid--col1-3 {
-    padding: 0 5px;
-    width: 200px;
-    white-space: normal;
-}
-
-.footer-mid__list {
-    padding: 0;
-}
-
-footer ul li {
-    list-style-type: none;
-    margin-bottom: 20px;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
-}
-
-.footer-mid__grid--col1-3 h3 {
-    text-transform: uppercase;
-    font-size: 17px;
-    font-weight: 700;
-    font-family: Lato, Helvetica, Arial, sans-serif;
-}
-
-footer a:hover {
-    color: #b3b3b3da;
-}
-
-.footer-bottom {
-    margin-top: 40px;
-    margin-left: 20px;
-    padding-bottom: 3%;
-}
-
-.footer-bottom__language {
-    display: flex;
-}
-
-.VN {
-    height: 10px;
-}
-
-.footer-bottom__language--left {
-    font-size: 10px;
-    margin: 5px 15px;
-}
-
-.footer-bottom__language--vn {
-    padding: 0 20px;
-    margin: 0;
-    border-left: 1px solid #b3b3b3;
-}
-
-.footer-bottom__language--eng {
-    font-size: 90%;
-    margin: 2px 0;
-}
-
-.footer-bottom__language--right {
-    margin: 5px 10px;
-    font-size: 10px;
-}
-
-.footer-bottom__nav {
-    display: block;
-    margin: 28px 0;
-    display: flex;
-}
-
-.footer-bottom__nav a {
-    padding: 0 10px;
-    font-size: 15px;
-}
-
-.footer-bottom__links--daudoan {
-    margin-left: -1%;
-}
-
-.footer-bottom__links2-5 a {
-    padding: 0 10px;
-    border-left: 1px solid #b3b3b3;
-}
-
-.footer__copyright {
-    font-size: 11px;
-}
-
-        /* KET THUC CSS FOOTER */
-
-        /* responsive mobile */
 @media screen and (max-width: 767px) {
-    .main{
+    .main {
         height: fit-content;
         padding-bottom: 1px;
     }
-    .title{
+    .title {
         margin-left: 0;
     }
-    .bigcard-text{
+    .bigcard-text {
         margin-left: 0;
     }
-    .locate1{
+    .locate1 {
         margin-top: 30px;
         margin-bottom: 0;
     }
-    .locate2{
+    .locate2 {
         margin-top: 0;
     }
-    .mid-desc{
+    .mid-desc {
         margin-left: 0;
         padding: 25px 20px;
     }
-    .bottom-cards{
+    .bottom-cards {
         width: fit-content;
         flex-wrap: wrap;
-        
     }
-    .bottom-cards1{
+    .bottom-cards1 {
         margin: auto;
         padding-right: 10px;
         padding-left: 10px;
     }
-    .bottom-cards2{
+    .bottom-cards2 {
         margin: 40px auto 0;
         padding-right: 10px;
         padding-left: 10px;
     }
-    .bottom-cards-img{
+    .bottom-cards-img {
         max-width: 250px;
         width: auto;
         height: 220px;
         overflow: hidden;
     }
-    .bottom-cards-img img{
+    .bottom-cards-img img {
         width: auto;
     }
 }
 
-        /* responsive tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .main{
+
+/* responsive tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main {
         height: fit-content;
         padding-bottom: 1px;
         padding-top: 8px;
     }
-    .title{
+    .title {
         margin-left: 20px;
         text-align: left;
     }
-    .bigcard{
+    .bigcard {
         justify-content: space-between;
     }
-    .bigcard-img{
+    .bigcard-img {
         width: 45%;
         height: 45%;
     }
-    .bigcard-text{
+    .bigcard-text {
         margin-left: 0;
         width: 50%;
     }
-    .locate1{
+    .locate1 {
         margin-top: 30px;
         margin-bottom: 0;
     }
-    .locate2{
+    .locate2 {
         margin-top: 0;
     }
-    .mid-desc{
+    .mid-desc {
         margin-left: 0;
         padding: 25px 20px;
         text-align: left;
     }
-    .bottom-cards{
+    .bottom-cards {
         width: fit-content;
         flex-wrap: wrap;
         justify-content: space-around;
         width: 80%;
     }
-    .bottom-cards1{
+    .bottom-cards1 {
         margin-bottom: 50px;
     }
-    .bottom-cards2{
+    .bottom-cards2 {
         margin-left: 0;
         margin-bottom: 50px;
     }

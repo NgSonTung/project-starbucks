@@ -396,244 +396,95 @@ h5 {
     width: 1330px;
     height: 750px;
 }
+
 @media screen and (max-width: 767px) {
-    #banh{
+    #banh {
         width: 100%;
         flex-direction: row;
         text-align: center;
         height: 1100px;
     }
-    #banh-1{
+    #banh-1 {
         width: 35%;
     }
-    .banh1{
+    .banh1 {
         margin-left: 38px;
         margin-right: -50px;
     }
-    .banh2{
+    .banh2 {
         margin-right: -100px;
         margin-left: 85px;
     }
-    .banh3{
+    .banh3 {
         margin-left: 38px;
         margin-right: -100px;
         clear: both;
     }
-    .banh4{
+    .banh4 {
         margin-left: 135px;
         margin-right: -100px;
     }
-    .banh5{
+    .banh5 {
         margin-left: 38px;
         margin-right: -100px;
     }
-    .banh6{
+    .banh6 {
         margin-left: 135px;
         margin-right: -100px;
     }
-    .banh7{
+    .banh7 {
         margin-left: 38px;
         margin-right: -100px;
         clear: both;
     }
-    .banh8{
+    .banh8 {
         margin-left: 135px;
         margin-right: 1px;
     }
-    .banh9{
+    .banh9 {
         margin-left: 38px;
     }
 }
+
 @media screen and (min-width:768px) and (max-width:1024px) {
-    #banh{
+    #banh {
         width: 100%;
         flex-direction: row;
         text-align: center;
         height: 750px;
     }
-    #banh-1{
+    #banh-1 {
         width: 20%;
     }
-    .banh1{
+    .banh1 {
         margin-left: 30px;
     }
-    .banh2{
+    .banh2 {
         margin-left: -70px;
     }
-    .banh3{
+    .banh3 {
         margin-right: -60px;
         margin-left: -5px;
     }
-    .banh4{
+    .banh4 {
         margin-left: 90px;
         margin-right: -50px;
     }
-    .banh5{
+    .banh5 {
         margin-left: 30px;
     }
-    .banh6{
+    .banh6 {
         margin-left: -70px;
     }
-    .banh7{
+    .banh7 {
         margin-left: -65px;
         margin-right: -80px;
     }
-    .banh8{
+    .banh8 {
         margin-left: 110px;
         margin-right: -80px;
     }
-    .banh9{
+    .banh9 {
         margin-left: 30px;
     }
 }
-
-
-/* CSS CUA FOOTER */
-
-footer {
-    font-family: sans-serif;
-    margin: 0 auto;
-}
-
-.footer-top {
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    margin: auto 20%;
-}
-
-.footer-top__icon {
-    margin: auto 0px;
-    height: 110px;
-    width: 100px;
-    display: flex;
-    position: relative;
-    right: 680px;
-}
-
-.footer-top__icon-link {
-    margin: auto 20%;
-}
-
-.footer__facebook {
-    font-size: 30px;
-}
-
-.footer__instagram {
-    font-size: 30px;
-}
-
-.footer-mid {
-    background-color: #f7f7f7;
-    border-top: 3px solid #fff;
-}
-
-.footer-mid__grid {
-    width: 1400px;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.footer-mid__grid--row {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-    background-image: url(https://www.starbucks.vn/media/wordmark_footer_tcm90-397.png);
-    background-size: 18.4px;
-    background-repeat: no-repeat;
-    background-position: 98.5% 0;
-    margin-top: 40px;
-}
-
-.footer-mid__grid--col1-3 {
-    padding: 0 5px;
-    width: 200px;
-    white-space: normal;
-}
-
-.footer-mid__list {
-    padding: 0;
-}
-
-footer ul li {
-    list-style-type: none;
-    margin-bottom: 20px;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
-}
-
-.footer-mid__grid--col1-3 h3 {
-    text-transform: uppercase;
-    font-size: 17px;
-    font-weight: 700;
-    font-family: Lato, Helvetica, Arial, sans-serif;
-}
-
-footer a:hover {
-    color: #b3b3b3da;
-}
-
-.footer-bottom {
-    margin-top: 40px;
-    margin-left: 20px;
-    padding-bottom: 3%;
-}
-
-.footer-bottom__language {
-    display: flex;
-}
-
-.VN {
-    height: 10px;
-}
-
-.footer-bottom__language--left {
-    font-size: 10px;
-    margin: 5px 15px;
-}
-
-.footer-bottom__language--vn {
-    padding: 0 20px;
-    margin: 0;
-    border-left: 1px solid #b3b3b3;
-}
-
-.footer-bottom__language--eng {
-    font-size: 90%;
-    margin: 2px 0;
-}
-
-.footer-bottom__language--right {
-    margin: 5px 10px;
-    font-size: 10px;
-}
-
-.footer-bottom__nav {
-    display: block;
-    margin: 28px 0;
-    display: flex;
-}
-
-.footer-bottom__nav a {
-    padding: 0 10px;
-    font-size: 15px;
-}
-
-.footer-bottom__links--daudoan {
-    margin-left: -1%;
-}
-
-.footer-bottom__links2-5 a {
-    padding: 0 10px;
-    border-left: 1px solid #b3b3b3;
-}
-
-.footer__copyright {
-    font-size: 11px;
-}
-
-
-/* KET THUC CSS FOOTER */

@@ -43,11 +43,15 @@ body {
 
 .card__header--menu ul li {
     margin-left: 20px;
-    font-size: 10px;
+    font-size: 14px;
+}
+
+.card__header--menu ul li a {
+    padding-bottom: 2px;
 }
 
 .card__header--menu ul li a:hover {
-    transform: translateY(-3px);
+    border-bottom: 1px solid #ffffff;
 }
 
 #card__FAQs--font {
@@ -277,6 +281,7 @@ h1 {
     border-radius: 50px;
     color: white;
     float: right;
+    margin-bottom: 20px;
 }
 
 .card-signuppage a:hover {

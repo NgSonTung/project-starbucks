@@ -42,12 +42,14 @@ body {
 
 .card__header--menu ul li {
     margin-left: 20px;
-    font-size: 90%;
-    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+.card__header--menu ul li a {
+    padding-bottom: 2px;
 }
 
 .card__header--menu ul li a:hover {
-    transform: translateY(-3px);
     border-bottom: 1px solid #ffffff;
 }
 
@@ -466,8 +468,8 @@ footer {
 }
 
 .footer-bottom__copyrights>img {
-    width: 120px;
     float: right;
+    height: 13px;
 }
 
 .arrow {
@@ -789,7 +791,7 @@ input:checked~.card__container {
     }
 }
 
-@media only screen and (max-width: 1188px) {
+@media only screen and (max-width: 1086px) {
     .slideritem {
         flex: 1 0 29%;
     }
@@ -871,29 +873,7 @@ input:checked~.card__container {
     }
 }
 
-@keyframes arrowUp {
-    0% {
-        transform: rotate(45deg)
-    }
-    50% {
-        transform: rotate(-45deg)
-    }
-    100% {
-        transform: rotate(-135deg)
-    }
-}
-
-@keyframes arrowDown {
-    0% {
-        transform: rotate(-135deg)
-    }
-    50% {
-        transform: rotate(-45deg)
-    }
-    100% {
-        transform: rotate(45deg)
-    }
-}
+@media only screen and (max-width: 570px) {}
 
 @media only screen and (max-width: 991px) {
     #f__one,
@@ -926,15 +906,5 @@ input:checked~.card__container {
     #f__two,
     #f__three {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    .footer__copyright {
-        width: 100%;
-    }
-    .footer-bottom__copyrights img {
-        margin: 0;
-        float: left;
     }
 }
